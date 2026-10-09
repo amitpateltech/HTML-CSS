@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="../images/amazon.ico">
+    <title>Amazon</title>
+    <style>
+       body{
+        margin: 0px;
+       }
+        .upper-header{
+            background-color: #131921;
+            display: flex;
+            flex-direction: row;
+            padding: 15px;
+            color: white;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
+        .logo {
+            width: 110px;
+            height: 39px;
+           
+        }
+        .update{
+            font-family: Arial;
+            margin-left: 6px;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+        }
+        .bi-geo-alt{
+            margin-left: 15px;
+            
+        }
+        .search-bar{
+            display: flex;
+            justify-content: space-between;
+            width: 450px;
+            border: 1px solid gray;
+            padding: 5px;
+            border-radius: 5px;
+            background-color: white;
+            color: gray;
+            align-items: center;
+        }
+        .all{
+            background-color: rgb(217, 209, 209);
+            padding: 5px;
+            padding-left: 5px;
+        }
+        .bi-search{
+            background-color: orange;
+            padding: 4px;
+            font-size: 18px;
+        }
+        .all span{
+            border-right: 1px solid;
+            padding: 2px;
+        }
+        .flag{
+            width: 20px;
+            height: 18px;
+            padding-right: 3px;
+        }
+        .shortcut{
+            display: flex;
+            align-items: center;
+        }
+        .shortcut span{
+            margin-right: 12px;
+        }
+        .sign{
+            width: 158px;
+        }
+        .hello{
+            font-size: 13px;
+            margin-right: 60px;
+
+        }
+        .bi-cart{
+            font-size: 30px;
+            margin-left: 8px;
+        }
+        .Return{
+            font-size: 13px;
+            margin-right: 15px;
+        }
+        .lower-header{
+            background-color: #232F3E;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 3px;
+        }
+        .cart{
+            width: 20px;
+            font-size: 17px;
+            padding-left: 3px;
+        }
+       section {
+        display: grid;
+        grid-template-columns:  3fr 3fr 3fr 3fr ;
+       }
+       section div{
+        border: 1px solid gray;
+        margin: 20px;
+        height: 250px;
+        padding: 20px;
+        display: flex;
+       align-items: center;
+       box-shadow: 4px 4px 3px gray;
+       border-radius: 6px;
+       font-weight: bold;
+       font-size: 30px;
+       text-align: center;
+    }
+    footer{
+        font-family: Arial;
+    }
+    .row-1{
+        background-color: #445162;
+        padding-top: 10px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         padding-bottom: 10px;
+
+    }
+    .row-2{
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        padding-left:200px ;
+        padding-right:200px ;
+        margin-top: 20px;
+        padding-bottom: 35px;
+        border-bottom: 1px solid rgb(80, 79, 79);
+        font-size: 13px;
+        
+    
+        
+    }
+    .row-2 span {
+        display: block;
+        line-height: 40px;
+        
+        
+        
+    }
+    .logo-2 {
+            width: 110px;
+            height: 39px;
+           margin-right: 110px;
+        }
+        .row-3 {
+            display:flex;
+            justify-content: center;
+            padding-top: 35px;
+            padding-bottom: 35px;
+            align-items: center;
+           
+        }
+        .row-3 div{
+            margin-left: 10px;
+        }
+        .frow-1{
+            
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+             margin-right: 600px;
+             height: 100px;
+           padding: 30px; 
+           padding-left: 50px;
+           
+        }
+        .frow-1 div{
+            margin-bottom:20px ;
+            margin-left: 140px;
+            width: 70%;
+        }
+        .frow-1 div span{ 
+            display:block ;
+            font-size: 12px;
+        }
+        .frow-2{
+            text-align: center;
+           padding-bottom: 20px;
+           font-size: 12px;
+        }
+        .footer-2{
+            padding-top: 15px;
+            background-color:  #131A22;
+            color: white;
+        }
+        .footer{
+            background-color: #232F3E;;
+            color: white;
+        }
+        .ind{
+            border: 1px solid gray;
+            padding: 6px;
+            width: 80px;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            padding-left: 9px;
+            margin-right: 80px;
+        }
+        .globe{
+            border: 1px solid gray;
+            border-radius: 3px;
+            padding: 6px;
+            display: flex;
+            width: 130px;
+            justify-content: space-between;
+            
+        }
+        .eng{
+            padding-left: 6px;
+        }
+      .row-2 span:first-child{
+        font-size: 20px;
+      }
+     
+      .frow-1 span:not(:first-child){
+        color: gray;
+      }
+        
+    </style>
+</head>
+<body>
+    <header>
+         <div class="upper-header">
+       
+            <div class="update">
+                <img class="logo" src="../images/ChatGPT Image Sep 30, 2026, 11_49_36 AM.png" alt="">
+                <span class="bi bi-geo-alt"> <i>Update Location</i> </span>
+            </div>
+       
+
+         <div class="search-bar">
+            <span><span class="all">All <span class="bi bi-caret-down-fill"></span></span> <span class="placeholder"> Search Amaozon.in</span> </span>
+           
+            <span class="bi bi-search"></span>
+         </div>
+
+         <div class="shortcut">
+           <img class="flag" src="../images/flag.png" alt="">
+            <span>EN <span class="bi bi-caret-down-fill"></span></span>
+            
+            <div class="sign"><div class="hello">Hello , sign in</div><div> Account & Lists <span class="bi bi-caret-down-fill"></span></div></div>
+            <div > <div class="Return">Returns</div>  & Orders</div>
+            <span class="bi bi-cart"><span class="cart">Cart</span></span>
+            
+         </div>
+     </div>
+
+     <nav class="lower-header">
+        <span class="bi bi-list">All</span>
+        <span>Amaozon Pay</span>
+        <span>Mobiles</span>
+        <span>Today's Deals</span>
+        <span>Coupns</span>
+        <span>Flights</span>
+        <span>Electronics</span>
+        <span>Computers</span>
+        <span>New Releases</span>
+        <span>Bestsellers</span>
+        <span>Video Games</span>
+        <span>Fashion</span>
+        <span>Home & Kitchen </span>
+        <span>Fresh <span class="bi bi-caret-down-fill"></span></span>
+        <span>Grocery & Gourmet Foods</span>
+     </nav>
+    </header>
+    <section>
+        <div>50% <br> off on Men's Clothing</div>
+        <div>50% <br> off on Men's Clothing</div>
+        <div>50% <br> off on Men's Clothing</div>
+        <div>50% <br> off on Men's Clothing</div>
+        <div>50% <br> off on Men's Clothing</div>
+        <div>50% <br> off on Men's Clothing</div>
+        <div>50% <br> off on Men's Clothing</div>
+        <div>50% <br> off on Men's Clothing</div>
+    </section>
+    <footer>
+        <div class="footer">
+            <div class="row-1"> Back To Top</div>
+             <div class="row-2">
+               <div> <span >Get to Know <br> Us</span>
+                <span>About Amazon</span>
+                <span>Careers</span>
+                <span>Press Releases</span>
+                <span>Amazon Science</span>
+            </div>
+            <div> <span >Connect with Us</span>
+                <span> Facebook</span>
+                <span>Twitter</span>
+                <span>Instagram</span>
+            </div>
+            <div>
+                <span >Sell on Amazon</span>
+                <span>Sell under Amazon Accelerator</span>
+                <span>Protect and Build Your Brand</span>
+                <span>Amazon Global Selling</span>
+                <span>Supply to Amazon</span>
+                <span>Become an Affiliate</span>
+                <span>Fulfilment by Amazon</span>
+                <span>Advertise Your Products</span>
+                <span>Amazon Pay on Merchants</span>
+            </div>
+            <div>
+                <span >Your Account</span>
+                <span>Returns Centre</span>
+                <span>Recalls and Product Safety Alerts</span>
+                <span>100% Purchase Protection</span>
+                <span>Amazon App Download</span>
+                <span>Help</span>
+            </div>
+             </div>
+
+             <div class="row-3">
+                <img class="logo-2" src="../images/ChatGPT Image Sep 30, 2026, 11_49_36 AM.png" alt="">
+                <div class="globe">
+                    <span class="bi bi-globe"><span class="eng">English</span></span>
+                    <span class="bi bi-chevron-expand"></span>
+                </div>
+                <div class="ind">
+                    <img class="flag" src="../images/flag.png" alt="">
+                    <span>India</span>
+                </div>
+             </div>
+        </div>
+        <div class="footer-2">
+            <div class="frow-1"> 
+                <div>
+                    <span>AbeBooks</span>
+                     <span>Books, art</span>
+                     <span>&collectibles</span>
+                </div>
+                <div>
+                    <span>Amazon Web Services</span>
+                     <span>Scalable Cloud</span>
+                     <span>Computing Services</span>
+                </div>
+                <div>
+                    <span>Audible</span>
+                    <span>Download</span>
+                    <span>Audio Books</span>
+                </div>
+                <div>
+                    <span>IMDb</span>
+                    <span>Movies, TV</span>
+                    <span>& Celebrities</span>
+                </div>
+                <div>
+                    <span>Shopbop</span>
+                    <span>Designer</span>
+                    <span>Fashion Brands</span>
+                </div>
+                <div>
+                    <span>Amazon Business</span>
+                    <span>Everything For</span>
+                    <span>Your Business</span>
+                </div>
+                <div>
+                    <span>Amazon Music</span>
+                     <span>Stream millions of songs</span>
+                </div>
+            </div>
+
+            <div class="frow-2">
+                <div>Conditions of Use & Sale &nbsp; Privacy Notice &nbsp; Interest-Based Ads</div>
+                <div>© 1996-2026, Amazon.com, Inc. or its affiliates</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

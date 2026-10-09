@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Document</title>
+    <style>
+       .bi-x-lg{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        color: gray;
+       }
+       dialog{
+        width: 350px;
+        height: auto;
+        border: none;
+        font-family: Arial;
+        background-color: rgb(226, 226, 226);
+        padding: 20px;
+        border-radius: 10px;
+        height: 300px;
+        line-height: 24px;
+        box-shadow: 4px 4px 2px rgb(200, 198, 198);
+        margin-top: 20px;
+    
+       } 
+       .icon{
+        font-size: 55px;
+        display: flex;
+        justify-content: center;
+        margin: -17px;
+        color: green;
+       
+       }
+       .successful{
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 30px;
+       }
+       .amt{
+        color: rgb(133, 132, 132);
+        word-spacing: 2px;
+        margin-top: 15px;
+        text-align: center;
+
+       }
+       .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       }
+       .code{
+        background-color: rgb(218, 218, 218);
+        padding: 10px;
+        border-radius: 5px;
+        margin-top: 15px;
+       }
+       .code span{
+        margin-right:5px;
+       }
+       .bi-copy{
+        margin-left: 30px;
+       }
+       .footer{
+        display: flex;
+        margin-top: 15px;
+       }
+       .receipt{
+        background-color: rgb(218, 218, 218);
+        padding: 10px;
+        border-radius: 5px;
+        font-weight: bold;
+        width: 150px;
+        text-align: center;
+       }
+       .done{
+        background-color: green;
+        padding: 10px;
+        width: 140px;
+        text-align: center;
+        margin-left: 15px;
+        color: white;
+        border-radius: 5px;
+       }
+    </style>
+</head>
+<body>
+    
+    <dialog open>
+         <span class="bi bi-x-lg"></span>
+        <div class="main">
+           
+        <div class="icon">   
+            <span class="bi bi-check-circle"></span>
+        </div>
+        <div class="successful">Payment Successful</div>
+        <div class="amt">Your payment of &&#8377; 1,499 has been <br> successfully processed.</div>
+        <div class="code"><span>Transaction ID:</span> <span>TXN829374</span> <span class="bi bi-copy"></span></div>
+        <div class="footer">
+            <div class="receipt">View Receipt</div>
+            <div class="done" >Done</div>
+        </div>
+        </div>
+    </dialog>
+</body>
+</html>

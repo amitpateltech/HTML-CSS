@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Document</title>
+
+    <style>
+        dialog{
+            border: unset;
+            padding: 0px;
+            border: 1px solid gray;
+            box-shadow: 0 0 8px gray;
+            border-radius: 10px;
+        }
+        .dialog-header{
+            background-color: rgb(234, 68, 8);
+            padding: 30px;
+            width: 350px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            font-size: 22px;
+            color: white;
+            display: flex;
+            align-items: center;
+           
+        }
+        .heading{
+             overflow: hidden;
+            text-overflow: ellipsis;
+            width: 220px;
+        }
+    
+        .bi-person-circle{
+            color: white;
+            font-size: 35px;
+            padding-right: 20px;
+        }
+        .dialog-body{
+            
+            height: 400px;
+            padding: 20px;
+            background-color: rgb(237, 233, 233);
+            display: flex;
+            flex-direction: column;
+            justify-content:end;
+            margin-top: -10px;
+            border-radius: 13px;
+            margin-bottom: -10px;
+            
+        }
+        .chat{
+            
+            background-color:  rgb(207, 201, 201);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .dialog-footer{
+           background-color: rgb(237, 233, 233);
+           padding: 30px;
+           border-bottom-left-radius: 10px;
+           border-bottom-right-radius: 10px;
+           border-top: 1px solid rgb(176, 172, 172);
+           
+           
+        }
+        .type{
+            color: rgb(191, 188, 188);
+        }
+    </style>
+</head>
+<body>
+    <dialog open>
+        <div class="dialog-header">
+            <span class="bi bi-person-circle"></span>
+            <span class="heading">onlinetraining@nareshit.com</span>
+        </div>
+        <div class="dialog-body">
+            <div >onlinetraining@nareshit.com</div>
+            <div class="chat">Hello Good Evening <br> Appear that you are visiting our pages! Can <br> we help you find any suitable course?</div>
+        </div>
+        <div class="dialog-footer">
+            <div class="type">Type your message and hit 'Enter'</div>
+        </div>
+    </dialog>
+</body>
+</html>

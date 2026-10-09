@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="../images/netflix.ico">
+    <title>Netflix</title>
+    <style>
+       body{
+        background-image: url(../images/netflix-banner.jpg);
+        background-size: cover;
+       }
+       .shade{
+       
+        background-color: rgba(0,0,0,0.7);
+        margin: -10px;
+       }
+       header{
+        color: white;
+        padding: 40px 150px 40px 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-family: Arial;
+        align-items: center;
+       }
+       .brand-name{
+        font-size: 50px;
+        color: red;
+        font-weight: bold;
+        font-style:italic;
+       }
+       .language{
+        border: 1px solid;
+        padding: 5px;
+        width: 140px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 5px;
+        background-color: rgba(0,0,0,0.4);
+       }
+       .btn-signin{
+        background-color: red;
+        width: 80px;
+        padding: 5px;
+        border-radius: 5px;
+        text-align: center;
+        margin-left: 10px;
+       
+       }
+       .shortcut{
+        display: flex;
+       }
+       article{
+        text-align: center;
+        margin-top: 50px;
+        color: white;
+        font-family: Arial;
+       }
+       .article-title{
+        font-size: 50px;
+        font-weight: bold;
+        margin-bottom: 20px;
+       }
+       .article-subtitle{
+        font-size: 25px;
+        margin-bottom: 20px;
+       }
+       .main-title{
+        margin-bottom: 15px;
+       }
+       .email{
+        width: 230px;
+        background-color: rgba(0,0,0,0.7);
+        border: 1px solid gray;
+        padding: 15px;
+        text-align: left;
+        border-radius: 5px;
+       }
+       .btn-start{
+        width: 150px;
+        background-image: linear-gradient(red,rgb(151, 9, 151));
+        padding: 15px;
+        text-align: center;
+        margin-left: 10px;
+        border-radius: 5px;
+        color: white;
+        font-weight: bold;
+        font-family: Arial;
+       }
+       .form{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+       }
+       .main{
+        margin-bottom: 15px;
+       }
+    section{
+        color: white;
+          padding-left: 180px;
+          padding-right: 180px;
+          margin-top: 50px;
+    }
+    .questions{
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(43, 41, 41);
+        margin-bottom: 5px;
+        padding: 20px;
+        border-radius: 5px;
+        font-family: Arial;
+        font-weight: bold;
+    }
+    .faqs{
+        margin-bottom: 10px;
+        font-family: Arial;
+        font-weight: bold;
+    }
+    .main-2{
+        color: white;
+       margin-left: 450px;
+       margin-top: 60px;
+       font-size: 18px;
+       margin-bottom: 15px;
+       font-family: Arial;
+    }
+    .email-2{
+        width: 230px;
+        background-color: rgba(0,0,0,0.6);
+        border: 1px solid gray;
+        padding: 15px;
+        text-align: left;
+        border-radius: 5px;
+        color: white;
+        width: 400px;
+    }
+    footer{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        color: rgb(197, 191, 191);
+        font-family: Arial;
+        background-color: rgb(25, 24, 24);
+        padding: 80px;
+        padding-left:150px ;
+      
+    }
+    .row-2{
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+       
+    }
+    .row-2 span{
+        display: block;
+        margin-top: 10px;
+        text-decoration: underline;
+        font-size: 14px;
+    }
+    footer div{
+        margin-bottom: 20px;
+    }
+    .row-1{
+        font-family: Arial;
+        font-size: 20px;
+    }
+    
+    .row-5{
+        font-size: 10px;
+        margin-top: 25px;
+    }
+   .row-2 .heading{
+        font-size: 17px;
+    }
+    </style>
+</head>
+<body>
+    <div class="shade">
+        <header>
+            <div>
+                <span class="brand-name">NETFLIX</span>
+            </div>
+
+            <div class="shortcut">
+                <div class="language">
+                    <span class="bi bi-translate">English</span>
+                    
+                    <span class="bi bi-caret-down-fill"></span>
+                </div>
+                <div class="btn-signin"> Sign In</div>
+            </div>
+        </header>
+        <article>
+            <div class="article-title">Entertainment For <br>every moment</div>
+            <div class="article-subtitle"> Starts at ₹149. Cancel at any time..</div>
+            <main>
+                <div class="main"> Ready To Watch ? Enter your email to create your membership.</div>
+                <div class="form"> 
+                    <div class="email">Email Address</div>
+                    <div class="btn-start">Get Started <span class="bi bi-chevron-right"></span></div>
+            </div>
+            </main>
+        </article>
+        <section>
+            <div class="faqs">Frequently Asked Questions</div>
+            <div class="questions">What is Netflix? <span class="bi bi-plus-lg"></span></div>
+            <div class="questions">How much does Netflix cost? <span class="bi bi-plus-lg"></span></div>
+            <div class="questions">Where can I watch? <span class="bi bi-plus-lg"></span></div>
+            <div class="questions">How do I cancel? <span class="bi bi-plus-lg"></span></div>
+            <div class="questions">What can I watch on Netflix? <span class="bi bi-plus-lg"></span></div>
+            <div class="questions">Is Netflix good for kids? <span class="bi bi-plus-lg"></span></div>
+        </section>
+        <main>
+                <div class="main-2"> Ready To Watch ? Enter your email to create your membership.</div>
+                <div class="form"> 
+                    <div class="email-2">Email Address</div>
+                    <div class="btn-start">Get Started <span class="bi bi-chevron-right"></span></div>
+            </div>
+            </main>
+            <footer>
+                <div class="row-1">
+                    <address>Questions? Call 000-800-919-1743</address>
+               </div>
+
+                <div class="row-2"> 
+                    <div>
+                       <span  class="heading">FAQ</span>
+                        <span>Investor Relations</span>
+                        <span>Privacy</span>
+                        <span>Speed Test</span>
+                    </div>
+                    <div>
+                        <span class="heading">Help Centre</span>
+                        <span>Jobs</span>
+                        <span>Cookie Preferences</span>
+                        <span>Legal Notices</span>
+                    </div>
+                    <div>
+                        <span  class="heading">Accoutn</span>
+                        <span>Wyas To Watch</span>
+                        <span>Corporate Information</span>
+                        <span>Only On Netflix</span>
+                    </div>
+                    <div>
+                          <span  class="heading">Media</span>
+                        <span>Terms Of Uses</span>
+                        <span>Contact Us</span>
+                    </div>
+                </div>
+                <div class="row-3">
+                    <div class="language">
+                    <span class="bi bi-translate">English</span>
+                    
+                    <span class="bi bi-caret-down-fill"></span>
+                </div>
+                 </div>
+                <div class="row-4"> Netflix India</div>
+                <div class="row-5"> The page is protected by Google reCAPTCHA to ensure you're not a bot. </div>
+            </footer>
+    </div>
+</body>
+</html>

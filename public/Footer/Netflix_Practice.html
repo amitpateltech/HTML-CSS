@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="../images/netflix.ico">
+    <title>Netflix</title>
+    <style>
+        body{
+             background-image: url(../images/netflix-banner.jpg);
+             
+        }
+        .shade{
+            background-color: rgba(0,0,0,0.7 );
+            margin: -10px;
+        }
+        header{
+            display: flex;
+            flex-direction: row;
+            padding: 40px;
+            justify-content: space-between;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .brand-name{
+            font-size: 50px;
+            color: red;
+            font-weight: bold;
+            margin-left: 120px;
+        }
+        .shortcut{
+            margin-right: 140px;
+             display: flex;
+        }
+        .language{
+           border: 1px solid;
+           height: 20px;
+           padding: 5px;
+           width: 120px;
+           display: flex;
+           justify-content: space-evenly;
+           border-radius: 5px;
+           align-items: center;
+           font-weight: bold;
+           color: white;
+        }
+        .bi-caret-down-fill{
+            padding-left: 8px;
+        }
+        .bi-translate{
+            padding-right: 5px;
+        }
+        .signin{
+            background-color: red;
+            height: 20px;
+            padding: 7px;
+            border-radius: 5px;
+            margin-left: 10px;
+            font-weight: bold;
+            width: 60px;
+            text-align: center;
+        }
+        article{
+            display: flex;
+            align-items: center;
+            color: white;
+            flex-direction: column;
+            font-family: Arial;
+        }
+        .article-title{
+            font-size: 55px;
+            font-weight: bold;
+            margin-top:70px ;
+            margin-left: 20px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .article-subtitle{
+            font-size: 20px;
+             font-weight: bold;
+             margin-bottom: 15px;
+        }
+        .main{
+            font-size: 15px;
+             margin-bottom: 10px;
+             margin-left: 30px;
+             color: white;
+        }
+        .form{
+            display: flex;
+            
+        }
+        .email{
+            display: flex;
+            border: 1px solid gray;
+            padding: 19px;
+            width: 300px;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-right: 20px;
+            color: white;
+            align-items: center;
+        }
+        .start{
+            background-image:linear-gradient(90deg,rgb(163, 23, 163)25%,rgb(208, 29, 148),red);
+            padding: 19px;
+              border-radius: 4px;
+              width: 155px;
+              font-size: 23px;font-weight: bold;
+        }
+        .faqs{
+            display: flex;
+            flex-direction: column;
+            padding-right:150px ;
+            padding-left: 150px;
+            color: white;
+             margin-top: 50px;
+
+        }
+        .faq-title{
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .Questions{
+            background-color: rgb(53, 51, 51);
+            border-radius: 5px;
+            font-weight: bold;
+            padding: 17px;
+            margin-bottom: 7px;
+            display: flex;
+            justify-content: space-between;
+            font-family: Arial;
+        }
+        .bi-plus-lg{
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .main-2{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 15px;
+        }
+        .email-2{
+             border: 1px solid gray;
+             padding: 10px;
+              display: flex;
+            width: 500px;
+            border-radius: 4px;
+            font-weight: bold;
+            margin-right: 20px;
+            color: white;
+          align-items: center;
+          height: 33px;
+          font-family: Arial;
+        }
+        .start-2{
+              background-image:linear-gradient(90deg,rgb(163, 23, 163)25%,rgb(208, 29, 148),red);
+               padding: 19px;
+              border-radius: 4px;
+              width: 155px;
+              font-size: 23px;font-weight: bold;
+              height: 20px;
+              display: flex;
+              align-items: center;
+              font-family: Arial;
+              color: white;
+        }
+        .main-1{
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        footer{
+            display: flex;
+            flex-direction: column;
+            color: wheat;
+            margin-top: 100px;
+            padding-left:100px;
+            color: rgb(194, 191, 191);
+          
+        }
+        .row-2{
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+             grid-gap: 10px;
+        }
+        .row-2 span{
+            display: block;
+            margin-bottom: 9px;
+            text-decoration: underline;
+        }
+        footer div{
+            margin-bottom: 40px;
+        }
+        .row-5{
+            font-size: 11px;
+            color: gray;
+        }
+        address{
+            font-family: Arial;
+            font-size: 17px;
+        }
+    </style>
+</head>
+<body>
+    <div class="shade">
+        <header>
+            <div class="brand-name">NETFLIX</div>
+            <div class="shortcut">
+               <div class="language"> 
+                <span class="bi bi-translate"></span>
+                <span>English</span>
+                <span class="bi-caret-down-fill"></span>
+            </div>
+                <span class="signin"> Sign In</span>
+            </div>
+        </header>
+        <article>
+            <div class="article-title">In the mood for great <br>entertainment?</div>
+            <div class="article-subtitle">Starts at ₹149. Cancel at any time.</div>
+            <main>
+                <div class="main-1">Ready to watch? Enter your email to create or restart your membership.</div>
+                <div class="form">
+                    <div class="email">Email address</div>
+                    <div class="start">Get Started <span class="bi bi-chevron-right"></span></div>
+                </div>
+            </main>
+        </article>
+        <section class="faqs">
+            <div class="faq-title">Frequently Asked Questions</div>
+            <div class="Questions">What is Netflix?<span class="bi bi-plus-lg"></span></div>
+            <div class="Questions">How Much Does Netflix Cost?<span class="bi bi-plus-lg"></span></div>
+            <div class="Questions">Where Can I Watch? <span class="bi bi-plus-lg"></span></div>
+            <div class="Questions">How Do I Watch? <span class="bi bi-plus-lg"></span></div>
+            <div class="Questions">How Do I cancel? <span class="bi bi-plus-lg"></span></div>
+            <div class="Questions">What can I watch on Netflix? <span class="bi bi-plus-lg"></span></div>
+            <div class="Questions">Is Netglix good for Kids? <span class="bi bi-plus-lg"></span></div>
+        </section>
+         <main class="main-2">
+                <div class="main">Ready to watch? Enter your email to create or restart your membership.</div>
+                <div class="form">
+                    <div class="email-2">Email address</div>
+                    <div class="start-2">Get Started <span class="bi bi-chevron-right"></span></div>
+                </div>
+            </main>
+            <footer>
+                <div class="row-1">
+                    <address>Questions? Call 000-800-919-1743</address>
+                </div>
+                <div class="row-2">
+                    <div>
+                        <span>FAQ</span>
+                        <span>Investor Relations</span>
+                        <span>Privacy</span>
+                        <span>Speed Test</span>
+                    </div>
+                    <div>
+                        <span>Help Centre</span>
+                        <span>Jobs</span>
+                        <span>Cookie Preferences</span>
+                        <span>Legal Notices</span>
+                    </div>
+                    <div>
+                        <span>Accoutn</span>
+                        <span>Wyas To Watch</span>
+                        <span>Corporate Information</span>
+                        <span>Only On Netflix</span>
+                    </div>
+                    <div>
+                        <span>Media</span>
+                        <span>Terms Of Uses</span>
+                        <span>Contact Us</span>
+                    </div>
+                </div>
+                <div class="row-3">
+                    <div class="language"> 
+                <span class="bi bi-translate"></span>
+                <span>English</span>
+                <span class="bi-caret-down-fill"></span>
+            </div>
+                </div>
+                <div class="row-4">
+                    Netflix India
+                </div>
+                <div class="row-5">
+                    The Page is Protected by Google re CAPTACHA to ensure you're not a bot.
+                </div>
+                
+            </footer>
+    </div>
+</body>
+</html>

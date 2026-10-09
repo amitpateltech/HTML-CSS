@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Flipkart</title>
+    <style>
+        body{
+            margin: -10px;
+        }
+        section{
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            font-size: 25px;
+        }
+        section div{
+            border: 1px solid;
+            height: 350px;
+            margin-right: 20px;
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+        .card-1{
+            background-color: red;
+            color: white;
+        }
+         .card-2{
+            background-color: rgb(64, 135, 69);
+            color: white;
+        }
+         .card-3{
+            background-color: rgb(60, 60, 156);
+            color: white;
+        }
+         .card-4{
+            background-color: rgb(178, 16, 156);
+            color: white;
+        }
+        .left-column{
+           display: grid;
+           grid-template-columns: 3fr 3fr 3fr 3fr; 
+        }
+        .right-column{
+            border-left: 1px solid;
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            
+        }
+        footer{
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            background-color: rgb(29, 28, 42);
+            color: white;
+            padding: 50px;
+            
+        }
+        .left-column span{
+            display: block;
+            margin-right: 10px;
+            margin-bottom: 3px;
+            font-size: 13px;
+        }
+        .right-column{
+            padding-left: 30px;
+        }
+        .right-column span{
+            
+            display: block;
+            font-size: 13px;
+        }
+        .icon span{
+            display: inline;
+            margin-right: 10px;
+           
+        }
+        .icon{
+            margin-top: 5px;
+        }
+        .logo{
+            margin-left: 100px;
+            width: 120px;
+            height: 40px;
+            border-radius: 10px;
+        }
+        .row-1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+          
+          padding: 5px;
+
+        }
+        .sec-1{
+            display:flex;
+            align-items: center;
+        }
+        header{
+            padding: 30px;
+        }
+     .sec-1 span{
+        padding-left: 60px;
+     }
+     .del{
+        color: blue;
+     }
+     .scooter{
+         height: 20px;
+     }
+     .air{
+        height: 20px;
+     }
+     .bi-search{
+        border: 2px solid rgb(77, 162, 202);
+        padding: 12px;
+        border-radius: 12px;
+        width: 60%;
+        margin-left: 100px;
+        
+     }
+     .row-2{
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        justify-content: space-between;
+     }
+     .shortcut {
+        margin-right: 30px;
+        color: rgb(95, 92, 92);
+     }
+     .bi-person-circle{
+      margin-right: 30px;
+      border: 1px solid;
+      padding: 5px;
+     }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="row-1">
+            <div class="sec-1"><img class="logo" src="../images/Flipkart_Logo_as_of_2025.png" alt="">
+                <span> <img class="scooter" src="../images/scooter_3157651.ico" alt=""> Minutes</span>
+                <span><img class="air" src="../images/aircraft_10822782.ico" alt=""> Travel</span>
+            </div>
+            <div>
+                <span class="bi bi-geo-alt-fill"> <span>Location Not set <span class="del">Set Delivery Location</span></span></span>
+
+            </div>
+        </div>
+        <div class="row-2">
+            <div  class="bi bi-search"> Search For Products , Brand and More</div>
+            <div class="shortcut">
+                <span class="bi bi-person-circle">Account <span class="bi bi-chevron-down"></span></span>
+                <span>More <span class="bi-caret-down"></span></span>
+                <span class="bi bi-cart"></span>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="card-1">Jall work min.<br> saree 50% off &#8377;500</div>
+        <div class="card-2">Mixed from metal <br> &#8377;99</div>
+        <div class="card-3">Tiered From dress <br> &#8377;199</div>
+        <div class="card-4">Point-toe From <br> bellies &#8377;249</div>
+    </section>
+    <footer>
+        <div class="left-column">
+            <div>
+                <span>ABOUT</span>
+                 <span>Contact Us</span>
+                 <span>About Us</span>
+                 <span>Careers</span>
+                 <span>Flipkart Stories</span>
+                 <span>Press</span>
+                 <span>Corporate Information</span>
+            </div>
+            <div>
+                 <span>GROUP COMPANIES</span>
+                    <span>Myntra</span>
+                    <span>Cleartrip</span>
+                    <span>Shopsy</span>
+           </div>
+           <div>
+            <span>HELP</span>
+              <span>Payments</span>
+              <span>Shipping</span>
+              <span>Cancellation & Returns</span>
+              <span>FAQ</span>
+            
+           </div>
+           <div>
+            <span>CONSUMER POLICY</span>
+                <span>Cancellation & Returns</span>
+                <span>Terms Of Use</span>
+                <span>Security</span>
+               <span>Privacy</span>
+               <span>Sitemap</span>
+               <span>Grievance Redressal</span>
+               <span>EPR Compliance</span>
+               <span>FSSAI Food Safety Connect</span>
+               <span>App</span>
+           </div>
+        </div>
+        <div class="right-column"> 
+            <div>
+            <span>Mail Us:</span>
+                   <span>Flipkart Internet Private Limited,</span>
+                   <span>Buildings Alyssa, Begonia &</span>
+                   <span>Clove Embassy Tech Village,</span>
+                   <span>Outer Ring Road, Devarabeesanahalli</span>
+                   <span>Bengaluru, 560103,</span>
+                   <span>Karnataka, India</span>
+                  <div class="icon">
+                     <span class="bi bi-facebook"></span>
+                     <span class="bi bi-twitter-x"></span>
+                     <span class="bi bi-youtube"></span>
+                     <span class="bi bi-instagram"></span>
+                     </div>
+          </div>
+            <div>
+                <span>Become a Seller</span>
+                <span>Advertise</span>
+                <span>Gift Cards</span>
+                <span>Help Center</span>
+                <span>© 2007-2026 Flipkart.com</span>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

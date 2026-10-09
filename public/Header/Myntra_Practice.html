@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Myntra</title>
+    <link rel="shortcut icon" href="../images/myntra.ico">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+     <style>
+        body{
+            background-color: black;
+        }
+        header{
+            font-weight: bold;
+            background-color: rgb(232, 223, 211);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 15px;
+            margin: 0px;
+
+        }
+        .brand-name{
+            font-family: Brush Script MT ;
+            color: red;
+            font-size: 45px;
+        }
+        nav span{
+            margin: 10px;
+        }
+        .search-bar{
+            border: 2px solid gray;
+            width: 290px;
+            padding: 10px;
+            border-radius: 15px;
+        }
+        .shortcut{
+            display: flex;
+            width: 170px;
+            justify-content: space-between;
+            font-weight: bold;
+            align-items: center;
+        }
+        .bi-search{
+            font-weight: bold;
+            margin-left: 5px;
+        }
+        .placeholder{
+            font-style: italic;
+            margin-left:8px ;
+            font-weight: bold;
+        }
+        .bi-bag{
+            font-weight: 200;
+            font-size: 20px;
+            margin-left: 3px;
+        }
+        .bi-heart{
+            font-weight: 200;
+            font-size: 20px;
+            margin-left: 13px;
+        }
+        .bi-person{
+            font-weight: 200;
+            font-size: 20px;
+            margin-left: 8px;
+        }
+     </style>
+</head>
+<body>
+    <header>
+      <div>
+        <nav>
+            <span class="brand-name">M</span>
+           <span>MENS</span>
+           <span>WOMENS</span>
+           <span>HOME</span>
+           <span>BEAUTY</span>
+           <span>KIDS</span>
+           <span>GENZ</span>
+           <span>STUDIO</span>
+        </nav>
+      </div>
+
+      <div>
+          <div class="search-bar">
+            <span class="bi bi-search"></span>
+            <span class="placeholder"> Search for Products,Brand and More</span>
+          </div>
+      </div>
+
+      <div>
+        <div class="shortcut">
+            <div class="shortcut-item">
+                <span class="bi bi-person"></span>
+                <span class="shortcut-item-text">Profile </span>
+            </div>
+             <div class="shortcut-item">
+                <span class="bi bi-bag"></span>
+                <span class="shortcut-item-text">Bag</span>
+             </div>
+             <div class="shortcut-item">
+                <span class="bi bi-heart"></span>
+                <span class="shortcut-item-text">Wishlist</span>
+             </div>
+        </div>
+      </div>
+    </header>
+</body>
+</html>

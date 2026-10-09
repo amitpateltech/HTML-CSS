@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <title>Document</title>
+    <style>
+      dialog {
+        font-family: Arial;
+        width: 400px;
+        font-size: 22px;
+        border: 1px solid gray;
+        border-radius: 10px;
+        padding: 0px;
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+      .dialog-header {
+        background-color: rgb(193, 192, 192);
+        padding: 20px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 25px;
+        font-weight: bold;
+      }
+      .dialog-body {
+        padding: 30px;
+      }
+      .form-control {
+        background-color: rgb(190, 190, 190);
+        padding: 20px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .dialog-footer {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+      }
+      .btn-submit {
+        background-color: blue;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <dialog open>
+      <div class="dialog-header">
+        <span>Talk To Advisor Form</span>
+        <span class="bi bi-x-lg"></span>
+      </div>
+
+      <div class="dialog-body">
+        <div class="form-control">Full Name</div>
+        <div class="form-control">Mobile Number</div>
+        <div class="form-control">Email Address</div>
+        <div class="form-control">
+          <span>Select Course</span>
+          <span class="bi bi-chevron-down"></span>
+        </div>
+      </div>
+
+      <div class="dialog-footer">
+        <div class="btn-submit">Submit</div>
+      </div>
+    </dialog>
+    
+  </body>
+</html>

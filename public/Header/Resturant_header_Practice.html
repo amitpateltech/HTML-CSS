@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="../../public/images/pizza.ico">
+    <title>CraveDash</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            background-color: white;
+            align-items: center;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+        }
+        .deliver{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-left: 10px;
+        }
+        .bi-bag-heart{
+            color: brown;
+            font-size: 25px;
+            padding-right: 10px;
+        }
+        .brand-name{
+            color: rgb(209, 53, 53);
+            font-size: 28px;
+            font-family: Arial;
+            font-weight: bold;
+            
+        }
+        .search-bar{
+            border: 1px solid gray;
+            padding: 10px;
+            height: 20px;
+            width: 400px;
+            align-items: center;
+            border-radius: 5px;
+            color: rgb(134, 133, 133);
+        }
+        .shortcut-item{
+            display: flex;
+            
+            margin-right: 80px;
+            
+             align-items: center;
+             
+        }
+        .shortcut-item span{
+            margin-right: 25px;
+        }
+   
+      .bi-geo-alt{
+        font-size: 22px;
+        color: brown;
+        margin-right: 5px;
+        font-style: ita
+      }
+      .bag{
+        background-color: rgb(224, 14, 14);
+        padding: 4px;
+        border-radius: 5px;
+        color: white;
+          }
+          span i{
+            padding-right:4px ;
+          }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <nav>
+                
+                    <span class="bi bi-bag-heart"></span>
+                <span class="brand-name">CraveDash</span>
+                
+           
+               <div class="deliver">
+                <span class="bi bi-geo-alt"></span>
+                <span>DELEVER TO <span class="bi bi-chevron-compact-down"></span></span>
+                 </div>
+
+             </nav>
+        </div>
+               
+        
+        <div class="search-bar">
+            <span class="bi bi-search"> <span class="text">Search tacos,artisan,pizza,spicy ramen,desert</span></span>
+        </div>
+
+
+        <div class="shortcut">
+          <div class="shortcut-item">
+              <span class="bi bi-sliders2"> </span>
+            <span class="bi bi-heart"></span>
+            <span class="bi bi-receipt-cutoff"></span>
+            <span class="bag"> <i class="bi bi-bag"></i>Bag</span>
+            <span class="bi bi-person">Profile</span>
+          </div>
+        </div>
+    </header>
+</body>
+</html>

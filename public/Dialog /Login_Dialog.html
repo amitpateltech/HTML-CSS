@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Document</title>
+    <style>
+        dialog{
+            border: unset;
+            line-height: 30px;
+            background-color: rgb(236, 238, 235);
+            width: 380px;
+            padding: 30px;
+            height: 550px;
+            margin-top: 40px;
+            font-family: Arial;
+            box-shadow: 5px 5px 5px grey;
+        }
+        .bi-google{
+           background-image: linear-gradient(90deg,red,green ,yellow,blue);
+
+        }
+        .bi-x-lg{
+            display: flex;
+            justify-content: end;
+        }
+        .login{
+            font-size: 20px;
+            display: flex;
+            justify-content: space-around;
+            border-bottom:1px solid rgb(194, 190, 190) ;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        .title{
+            font-size: 20px;
+            font-weight: bold;
+            word-spacing: 4px;
+            margin-top: 10px;
+        }
+        .subtitle{
+            color: gray;
+            margin-top: 5px;
+        }
+        .Email{
+            border: 1px solid rgb(194, 190, 190);
+            width: 350px;
+            padding: 8px;
+            color: gray;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .password{
+            border: 1px solid rgb(194, 190, 190);
+            width: 350px;
+            padding: 8px;
+            color: gray;
+            margin-top: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .forget{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .fpass{
+            margin-right: 35px;
+            color: blue;
+        }
+        .bi-check-square-fill{
+            color: blue;
+        }
+        .re{
+            color: black;
+        }
+        .button{
+            background-color: blue;
+            color: white;
+            padding: 8px;
+            border-radius: 5px;
+            width: 350px;
+            margin-top: 10px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        fieldset{
+            border: unset;
+            border-top: 1px solid rgb(194, 190, 190);
+            text-align: center;
+            padding-right: 20px;
+        }
+        .google{
+            border: 1px solid rgb(194, 190, 190);
+             width: 350px;
+             padding: 8px;
+             border-radius: 5px;
+             text-align: center;
+             margin-top: 15px;
+        }
+        .github{
+            border: 1px solid rgb(194, 190, 190);
+             width: 350px;
+             padding: 8px;
+             border-radius: 5px;
+             text-align: center;
+             margin-top: 15px;
+        }
+        .end{ 
+            color: gray;
+            font-size: 12px;
+            text-align: center;
+        }
+        .sign{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <dialog open>
+         <span class="bi bi-x-lg"></span>
+     <div class="login">
+        <span>Login</span>
+        <span>Sign Up</span>
+     </div>
+     <div class="title">Login To Your Account</div>
+     <div class="subtitle">Enter your crendentials to acess your account.</div>
+     <div class="Email">
+        <span class="bi bi-envelope"></span> 
+        <span>Email address</span>
+    </div>
+    <div class="password">
+        <span class="bi bi-lock">   <span>Password</span></span>
+        <span class="bi bi-eye"></span>
+    </div>
+    <div class="forget">
+        <span class="bi bi-check-square-fill"> <span class="re">Remember me</span></span>
+        <span class="fpass">Forget Password</span>
+    </div>
+    <div class="button">Login</div>
+   <fieldset>
+    <legend>or</legend>
+   </fieldset>
+    <div class="google">
+        <span class="bi bi-google"></span>
+        <span>Continue With Googel</span>
+    </div>
+    <div class="github">
+        <span class="bi bi-github"></span>
+        <span>Continue With Github</span>
+    </div>
+    <div class="end">
+        <span >Don't have accoutn? <span class="sign">Sign Up</span></span>
+    </div>
+    </dialog>
+</body>
+</html>

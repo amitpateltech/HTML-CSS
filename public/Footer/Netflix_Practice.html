@@ -94,8 +94,8 @@
         .email{
             display: flex;
             border: 1px solid gray;
-            padding: 19px;
-            width: 300px;
+            padding: 10px;
+            width: 350px;
             border-radius: 4px;
             font-weight: bold;
             margin-right: 20px;
@@ -104,7 +104,7 @@
         }
         .start{
             background-image:linear-gradient(90deg,rgb(163, 23, 163)25%,rgb(208, 29, 148),red);
-            padding: 19px;
+            padding: 12px;
               border-radius: 4px;
               width: 155px;
               font-size: 23px;font-weight: bold;
@@ -203,6 +203,51 @@
             font-family: Arial;
             font-size: 17px;
         }
+        .trending{
+            color: white;
+            padding-left: 200px;
+            padding-right: 200px;
+            margin-top: 40px;
+            font-family: Arial;
+        }
+        .trending-title{
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .trend-card{
+            width: 200px;
+       
+            height: 300px;
+            
+            margin: 20px;
+            position: relative;
+        }
+        .trends-container{
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+        }
+        .pic-1{
+            background-size: contain;
+            background-image: url(../images/marvel.webp);
+            border-radius: 10px;
+        }
+         .pic-2{
+            background-size: contain;
+            background-image: url(../images/spiderman.webp);
+             border-radius: 10px;
+        }
+        .number{
+            font-size: 90px;
+            color: black;
+            font-family: Arial;
+            text-shadow: 1px 1px 1px rgb(13, 13, 13);
+            font-weight: bold;
+            position: absolute;
+            left: -25px;
+            bottom: 20px;
+            text-shadow: 2px 2px 2px white;
+            
+        }
     </style>
 </head>
 <body>
@@ -229,6 +274,30 @@
                 </div>
             </main>
         </article>
+        <section class="trending">
+        <div class="trending-title">Trending</div>
+        <div class="trends-container">
+            <div class="trend-card pic-1">
+                <div class="number">1</div>
+            </div>
+            <div class="trend-card pic-2">
+                <div class="number">2</div>
+            </div>
+             <div class="trend-card pic-3">
+                <div class="number">3</div>
+            </div>
+            <div class="trend-card pic-4">
+                <div class="number">4</div>
+            </div>
+             <div class="trend-card pic-5">
+                <div class="number">5</div>
+            </div>
+            <div class="trend-card pic-6">
+                <div class="number"></div>
+            </div>
+        </div>
+           
+        </section>
         <section class="faqs">
             <div class="faq-title">Frequently Asked Questions</div>
             <div class="Questions">What is Netflix?<span class="bi bi-plus-lg"></span></div>

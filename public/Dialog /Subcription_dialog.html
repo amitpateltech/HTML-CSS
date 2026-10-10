@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Document</title>
+    <style>
+        dialog{
+            background-color: rgb(233, 230, 230);
+            border: unset;
+            padding: 20px;
+            width: 550px;
+            height: 450px;
+            font-family: Arial;
+            border-radius: 10px;
+            box-shadow:3px 3px 4px 4px  rgb(201, 200, 200);
+            margin-top: 20px;
+        }
+        .bi-x-lg{
+            display: flex;
+            justify-content: end;
+        }
+        .bi-copy{
+            font-size: 25px;
+            color: rgb(28, 28, 208);
+          
+        }
+        .title{
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 13px;
+            margin-bottom: 5px;
+        }
+        .main{
+            margin-top: -12px;
+        }
+        .subscription{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            justify-content: space-around;
+        }
+        .monthly{
+            background-color: rgb(213, 212, 212);
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 22px;
+            border-radius: 10px;
+          width: 110px;
+        }
+        .price{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .yearly{
+            background-color: rgb(230, 229, 229);
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+           padding-left: 13px;
+            line-height: 22px;
+            border-radius: 10px;
+            border: 2px solid blue;
+             width: 110px;
+        }
+        .enterprise{
+            background-color:  rgb(213, 212, 212);
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+             align-items: center;
+            line-height: 22px;
+            border-radius: 10px;
+              width: 110px;
+        }
+        .features{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            line-height: 25px;
+        }
+        .fea{
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .button{
+            background-color: blue;
+            padding: 10px;
+            border-radius: 4px;
+            color: white;
+            text-align: center;
+            margin-top: 25px;
+            font-size: 13px;
+        }
+        .s1{
+            margin-bottom: 8px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .billed{
+            color: rgb(71, 70, 70);
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+        .select{
+            background-color: blue;
+            padding: 3px;
+            width: 90px;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+        .btn{
+            color: rgb(85, 83, 83);
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .bi-record-circle{
+            color: blue;
+            padding-right: 6px;
+        }
+    </style>
+</head>
+<body>
+    <dialog open>
+        <span class="bi bi-x-lg"></span>
+        <div class="main">
+            <span class="bi bi-copy"></span>
+            <div class="title">Upgrade for Advanced Insights and Tools</div>
+            <div>Select a plan that works best for you and start leveraging features <br> today for enhanced growth and success</div>
+            <div class="subscription">
+                <div class="monthly">
+                    <div class="s1">Monthly</div>
+                    <div class="price">&#8377;999/mo</div>
+                    <div class="billed">Billed monthly</div>
+                    <div class="btn">Current Plan</div>
+                </div>
+
+                <div class="yearly">
+                    <div class="s1"> <span class="bi bi-record-circle"></span>Yearly</div>
+                    <div class="price">&#8377;799/mo</div>
+                    <div class="billed">Billed Yearly</div>
+                    <div class="select">Select</div>
+                </div>
+
+                <div class="enterprise">
+                   <div class="s1">Enterprise</div>
+                   <div class="price">Contact Us</div>
+                    <div class="billed">Billed Accorndingly</div>
+                    <div class="btn">Contact Us</div>
+                </div>
+            </div>
+            <div class="fea">Features</div>
+            <div class="features">
+                <span class="bi bi-check-lg">Advance analysis</span>
+                <span class="bi bi-check-lg">Exclusive integrations</span>
+                <span class="bi bi-check-lg">Export and download report</span>
+                <span class="bi bi-check-lg">Customizable dashboards</span>
+                <span class="bi bi-check-lg">Advance analysis</span>
+                <span class="bi bi-check-lg">Priorty customer support</span>
+            </div>
+            <div class="button">Upgrade</div>
+        </div>
+    </dialog>
+</body>
+</html>

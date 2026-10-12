@@ -4,42 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="../images/flipkart_logo.ico">
     <title>Flipkart</title>
     <style>
         body{
             margin: -10px;
-        }
-        section{
-            padding: 30px;
-            display: grid;
-            grid-template-columns: 3fr 3fr 3fr 3fr;
-            font-size: 25px;
-        }
-        section div{
-            border: 1px solid;
-            height: 350px;
-            margin-right: 20px;
-            border-radius: 10px;
-            padding: 20px;
-            display: flex;
-            text-align: center;
-            justify-content: center;
-        }
-        .card-1{
-            background-color: red;
-            color: white;
-        }
-         .card-2{
-            background-color: rgb(64, 135, 69);
-            color: white;
-        }
-         .card-3{
-            background-color: rgb(60, 60, 156);
-            color: white;
-        }
-         .card-4{
-            background-color: rgb(178, 16, 156);
-            color: white;
+            font-family: Arial;
         }
         .left-column{
            display: grid;
@@ -109,6 +79,7 @@
      }
      .del{
         color: blue;
+        margin-right: 150px;
      }
      .scooter{
          height: 20px;
@@ -132,12 +103,169 @@
      }
      .shortcut {
         margin-right: 30px;
-        color: rgb(95, 92, 92);
+        color: rgb(56, 54, 54);
+        display: flex;
+        align-items: center;
+     }
+     .login{
+      margin-right: 30px;
+      padding: 5px;
+     }
+     .login span{
+        margin-right: 6px;
      }
      .bi-person-circle{
-      margin-right: 30px;
-      border: 1px solid;
-      padding: 5px;
+        font-size: 20px;
+     }
+     .cart span{
+        margin-right: 4px;
+     }
+     header{
+        padding-right: 90px;
+     }
+   
+     .sale{
+        padding-left: 100px;
+        padding-right: 100px;
+      
+     }
+     .banner{
+        background-image: url(../images/luxury_watch_banner.png);
+         width: 100%;
+         height: 320px;
+         background-size: cover;
+         display: flex;
+         align-items: center;
+          position: relative;
+          border-radius: 15px;
+     }
+     .main-heading{
+        display: flex;
+        flex-direction: column;
+     }
+     .tc{
+        position: absolute;
+        bottom: 10px;
+        color: white;
+        left: 10px;
+     }
+     .ad{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        color: white;
+        background-color: gray;
+        padding: 7px;
+        border-radius: 6px;
+     }
+     .main-title{
+        font-size: 45px;
+        margin-left: 35px;
+        color: white;
+     }
+     .subtitle{
+        font-size: 38px;
+        font-weight: bold;
+         margin-left: 35px;
+            color: white;
+     }
+     .m-contain{
+        background-image: linear-gradient(145deg,rgb(195, 89, 89),rgb(19, 116, 207),rgb(75, 13, 174),rgb(195, 89, 89));
+        margin-top: 20px;
+         margin-left: 100px;
+         margin-right: 100px;
+         border-radius: 15px;
+         padding: 20px;
+         color: white;
+       
+     }
+     .contain{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        align-items: center;
+        display: flex;
+     }
+     .products{
+        width: 160px;
+        height: 180px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+     }
+     .price{
+        width: 141px;
+        background-color: blue;
+        padding: 10px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        margin-top: -5px;
+        margin-bottom:6px ;
+        
+     }
+     .card-1{
+        text-align: center;
+         margin-left: 35px;
+     }
+     .big{
+        margin-left: 24px;
+        margin-bottom: 12px;
+        font-size:20px;
+        font-weight: bold;
+     }
+     .iphone{
+        background-image: url(../images/iphone-banner.png);
+        background-size: cover;
+         background-repeat: no-repeat;
+        height: 250px;
+        margin-left: 100px;
+        border-radius: 15px;
+        width: 600px;
+        margin-bottom: 15px;
+     }
+
+     .nothing{
+        background-image: url(../images/nothing-banner.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 250px;
+        width: 615px;
+        border-radius: 15px;
+        margin-bottom: 15px;
+     }
+     .new-trend{
+        display: grid;
+        grid-template-columns: 6fr 6fr;
+     }
+     .ad-1{
+        background-color: gray;
+        padding: 8px;
+        border-radius: 6px;
+        width: 25px;
+        color: white;
+        margin-left: 5px;
+        margin-top: 5px;
+     }
+     .m-title{
+        font-size: 35px;
+        color: rgb(245, 245, 244);
+        margin-left: 15px;
+        margin-top: 15px;
+     }
+     .m-subtitle{
+        font-size: 35px;
+        font-weight: bold;
+        color: rgb(211, 27, 27);
+        margin-left: 15px;
+     }
+     nav{
+        margin-left: 110px;
+        border-top: 1px solid rgb(189, 186, 186);
+        padding-top: 15px;
+     }
+     nav span{
+        margin: 15px;
+     }
+     .for{
+        border-bottom: 4px solid blue;
      }
     </style>
 </head>
@@ -149,25 +277,103 @@
                 <span><img class="air" src="../images/aircraft_10822782.ico" alt=""> Travel</span>
             </div>
             <div>
-                <span class="bi bi-geo-alt-fill"> <span>Location Not set <span class="del">Set Delivery Location</span></span></span>
-
+                <span class="bi bi-geo-alt-fill"> <span>Location Not set <span class="del">Set Delivery Location <span class="bi-chevron-right"></span> </span>  </span>  </span>
             </div>
         </div>
         <div class="row-2">
             <div  class="bi bi-search"> Search For Products , Brand and More</div>
             <div class="shortcut">
-                <span class="bi bi-person-circle">Account <span class="bi bi-chevron-down"></span></span>
-                <span>More <span class="bi-caret-down"></span></span>
+                <div class="login">
+                    <span class="bi bi-person-circle"></span>
+                    <span>Login</span>
+                    <span class="bi bi-chevron-down"></span>
+                </div>
+              <div class="cart">
+                  <span>More</span>
+                  <span class="bi-chevron-down"></span>
                 <span class="bi bi-cart"></span>
+                <span>Cart</span>
+              </div>
             </div>
         </div>
+        <nav>
+            <span class="for">For You</span>
+            <span>Fashion</span>
+            <span>Mobiles</span>
+            <span>Electronics</span>
+            <span>Beauty</span>
+            <span>Home</span>
+            <span>Appliances</span>
+            <span>Toys</span>
+            <span>Food</span>
+            <span>Auto</span>
+            <span>Furniture</span>
+            <span>Books</span>
+            <span>2 Wheeler</span>
+        </nav>
     </header>
+    <article>
+        <div class="new-trend">
+            <div class="iphone">
+                <div class="ad-1">AD</div>
+               <div class="m-title">I Phone 17 Pro</div>
+               <div class="m-subtitle">40% OFF</div>
+            </div>
+            <div class="nothing">
+                 <div class="ad-1">AD</div>
+               <div class="m-title">Nothing 3a Pro</div>
+               <div class="m-subtitle">50% OFF</div>
+            </div>
+        </div>
+    </article>
+    <article class="sale">
+        <div class="banner">
+           <div class="main-heading">
+             <div class="main-title">Unapologetically intricate</div>
+            <div class="subtitle">Up to 40% off</div>
+            <div class="tc">T&C<sup>*</sup> Apply</div>
+            <div class="ad">AD</div>
+           </div>
+        </div>
+    </article>
     <section>
-        <div class="card-1">Jall work min.<br> saree 50% off &#8377;500</div>
-        <div class="card-2">Mixed from metal <br> &#8377;99</div>
-        <div class="card-3">Tiered From dress <br> &#8377;199</div>
-        <div class="card-4">Point-toe From <br> bellies &#8377;249</div>
+      <div class="m-contain">
+        <div class="big">Bigg Billion Sale</div>
+        <div class="contain">
+        <div class="card-1"> 
+            <img class="products" src="../images/watch.jpg" alt="">
+            <div class="price">&#8377;5,999</div>
+            <div>Noise Watch 3</div>
+        </div>
+        <div class="card-1"> 
+            <img class="products" src="../images/bag.webp" alt="">
+            <div class="price">From &#8377;6,999</div>
+            <div>Safari Bags</div>
+        </div>
+        <div class="card-1"> 
+            <img class="products" src="../images/fridge.webp" alt="">
+            <div class="price">30% Off &#8377;10,999</div>
+            <div>L.G. Fridge</div>
+        </div>
+        <div class="card-1"> 
+            <img class="products" src="../images/buds.jpg" alt="">
+            <div class="price">From &#8377;99</div>
+            <div>Airpods Pro 3</div>
+        </div>
+        <div class="card-1"> 
+            <img class="products" src="../images/tv.jpg" alt="">
+            <div class="price">40% Off &#8377;20,999</div>
+            <div>Mi 4k Tv</div>
+        </div>
+         <div class="card-1"> 
+            <img class="products" src="../images/iphone.webp" alt="">
+            <div class="price">10% Off&#8377;90,999</div>
+            <div>I phone pro</div>
+        </div>
+        </div>
+      
     </section>
+      </div>
     <footer>
         <div class="left-column">
             <div>

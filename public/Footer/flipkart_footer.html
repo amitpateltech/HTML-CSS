@@ -154,7 +154,7 @@
         top: 10px;
         right: 10px;
         color: white;
-        background-color: gray;
+        background-color: rgba(0, 0, 0, 0.3);
         padding: 7px;
         border-radius: 6px;
      }
@@ -236,7 +236,7 @@
         grid-template-columns: 6fr 6fr;
      }
      .ad-1{
-        background-color: gray;
+        background-color: rgba(0, 0, 0, 0.3);
         padding: 8px;
         border-radius: 6px;
         width: 25px;
@@ -266,6 +266,16 @@
      }
      .for{
         border-bottom: 4px solid blue;
+     }
+     .auto{
+        
+        width: 100px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        vertical-align: middle;
+        display: inline-block;
+      
      }
     </style>
 </head>
@@ -306,7 +316,7 @@
             <span>Appliances</span>
             <span>Toys</span>
             <span>Food</span>
-            <span>Auto</span>
+            <span class="auto" title="Auto Accessories">Auto Accessories</span>
             <span>Furniture</span>
             <span>Books</span>
             <span>2 Wheeler</span>

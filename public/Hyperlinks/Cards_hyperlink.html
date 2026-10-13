@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 100px;
+        }
+        section{
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr ;
+            margin-top: 40px;
+           
+        }
+        nav span{
+            background-color: yellow;
+            padding: 10px;
+            margin: 10px;
+            margin-bottom: 20px;
+        }
+        .card:target{
+            box-shadow: 3px 3px 3px black;
+            display: block;
+            width: 300px;
+            border: 1px solid gray;
+            padding: 15px;
+            display: block;
+        }
+         .card{
+            border: 1px solid;
+            text-align: center;
+            width: 200px;
+            padding: 15px;
+            display: none;
+        }
+        ol{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <span><a href="#ai">Generative ai</a></span>
+        <span><a href="#python">Python</a></span>
+        <span><a href="#azure">Ms Azure</a></span>
+        <span><a href="#fde">FDE</a></span>
+    </nav>
+    <section>
+        <div id="python" class="card">
+            <img src="../images/PYTHON.png" alt="">
+            <ol>
+                <li>date 12 Oct 2026</li>
+                <li>by Mr. Someone</li>
+                <li>Duration 3 months</li>
+            </ol>
+        </div>
+          <div id="azure" class="card">
+            <img src="../images/MS Azure.jpg" alt="">
+            <ol>
+                <li>date 12 Oct 2026</li>
+                <li>by Mr. Someone</li>
+                <li>Duration 3 months</li>
+            </ol>
+        </div>
+          <div id="ai" class="card">
+            <img src="../images/Generative Ai.jpg" alt="">
+            <ol>
+                <li>date 12 Oct 2026</li>
+                <li>by Mr. Someone</li>
+                <li>Duration 3 months</li>
+            </ol>
+        </div>
+          <div id="fde" class="card">
+            <img src="../images/FDE.png" alt="">
+            <ol>
+                <li>date 12 Oct 2026</li>
+                <li>by Mr. Someone</li>
+                <li>Duration 3 months</li>
+            </ol>
+        </div>
+    </section>
+</body>
+</html>

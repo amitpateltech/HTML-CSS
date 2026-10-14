@@ -73,6 +73,8 @@
         }
         header{
             padding: 30px;
+             padding-right: 90px;
+             background-color: whitesmoke;
         }
      .sec-1 span{
         padding-left: 60px;
@@ -120,9 +122,7 @@
      .cart span{
         margin-right: 4px;
      }
-     header{
-        padding-right: 90px;
-     }
+     
    
      .sale{
         padding-left: 100px;
@@ -258,25 +258,132 @@
      }
      nav{
         margin-left: 110px;
+       margin-right: 110px;
         border-top: 1px solid rgb(189, 186, 186);
-        padding-top: 15px;
+       border-bottom: 1px solid rgb(189, 186, 186);
+        padding-top: 5px;
+        width: 1150px;
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
      }
-     nav span{
-        margin: 15px;
+     nav .icon{
+        margin: 16px;
+        text-align: center;   
      }
      .for{
         border-bottom: 4px solid blue;
      }
-     .auto{
-        
-        width: 100px;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
-        vertical-align: middle;
-        display: inline-block;
-      
+   
+     .spot{
+        width: 220px;
+        height: 140px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
      }
+     .spotlight{
+        padding-left: 100px;
+     }
+     .spot-contain{
+        display: flex;
+     }
+     .from{
+        background-image: linear-gradient(120deg,purple,rgb(170, 80, 170),blue);
+        color: white;
+        padding: 3px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        margin-top: -5px;
+     }
+     .s-card{
+        margin-right: 37px;
+        border: 1px solid rgb(216, 213, 213);
+        border-radius: 18px;
+        position: relative;
+     }
+       .s-ad{
+      position: absolute;
+      background-color:rgba(129, 129, 129, 0.4);
+      padding: 1px;
+      border-radius: 2px;
+      top: 7px;
+      right: 8px;
+      font-size: 9px;
+      padding: 2px;
+     }
+     .rate{
+        padding-left: 10px;
+        font-size: 12px;
+     }
+     .s-head{
+        font-size: 23px;
+        font-weight: bold;
+        margin: 15px;
+     }
+     .ban-2{
+        width: 1255px;
+       margin-left: 100px;
+        border-radius: 15px;
+        margin-top: 20px;
+     }
+     .su-card{
+      width: 250px;
+      height: 250px;
+   
+     }
+     .suggest-contain{
+      display: flex;
+
+     }
+     .suggest{
+      margin-left: 100px;
+     }
+     .s2{
+      color: gray;
+      text-decoration: line-through;
+     }
+   
+     .offer{
+      color: blue;
+     }
+     .suggest-title{
+      font-size: 23px;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 10px;
+     }
+     .suggest-card{
+      text-align:justify;
+      position: relative;
+     }
+     .suggest-contain .suggest-card{
+      margin-right: 7px;
+     }
+     .rating{
+      position: absolute;
+      bottom: 65px;
+      margin-left: 5px;
+      background-color: rgba(164, 160, 160, 0.4);
+      padding: 3px;
+      width: 60px;
+      border-radius: 5px;
+      text-align: center;
+     }
+     .bi-star-half{
+      color: green;
+     }
+     .des{
+      margin-top: 5px;
+     }
+     .sport{
+      display: inline-block;
+     }
+     .home{
+     height: 33px;
+     }
+   
     </style>
 </head>
 <body>
@@ -307,19 +414,62 @@
             </div>
         </div>
         <nav>
-            <span class="for">For You</span>
-            <span>Fashion</span>
-            <span>Mobiles</span>
-            <span>Electronics</span>
-            <span>Beauty</span>
-            <span>Home</span>
-            <span>Appliances</span>
-            <span>Toys</span>
-            <span>Food</span>
-            <span class="auto" title="Auto Accessories">Auto Accessories</span>
-            <span>Furniture</span>
-            <span>Books</span>
-            <span>2 Wheeler</span>
+            <div class="icon">  
+               <div><img src="../images/for you.svg" alt=""></div>
+                <div>For You</div>
+            </div>
+            <div class="icon">  
+               <div><img src="../images/fashion.svg" alt=""></div>
+                <div>Fashion</div>
+            </div>
+               <div class="icon">  
+               <div><img src="../images/mobiles.svg" alt=""></div>
+                <div>Mobiles</div>
+            </div>
+               <div class="icon">  
+               <div><img src="../images/electronics.svg" alt=""></div>
+                <div>Electronics</div>
+            </div>
+               <div class="icon">  
+               <div><img src="../images/beauty.svg" alt=""></div>
+                <div>Beauty</div>
+            </div>
+               <div class="icon ">  
+               <div><img class="home" src="../images/home-final.svg" alt=""></div>
+                <div>Home</div>
+            </div>
+               <div class="icon">  
+               <div><img src="../images/tv.svg" alt=""></div>
+                <div>Appliances</div>
+            </div>
+               <div class="icon">  
+               <div><img src="../images/toy.svg" alt=""></div>
+                <div>Toys</div>
+            </div>
+               <div class="icon">  
+               <div><img src="../images/food.svg" alt=""></div>
+                <div>Foods</div>
+            </div>
+            <div class="icon">  
+               <div><img src="../images/auto-acc.svg" alt=""></div>
+                <div>Auto Acce..</div>
+            </div>
+            <div class="icon">  
+               <div><img src="../images/sport.svg" alt=""></div>
+                <div>Sport</div>
+            </div>
+            <div class="icon">  
+               <div><img src="../images/furniture.svg" alt=""></div>
+                <div>Furnitures</div>
+            </div>
+            <div class="icon">  
+               <div><img src="../images/books.svg" alt=""></div>
+                <div>Books</div>
+            </div>
+            <div class="icon">  
+               <div><img src="../images/auto-new.svg" alt=""></div>
+                <div>2 Wheeler</div>
+            </div>
         </nav>
     </header>
     <article>
@@ -381,9 +531,81 @@
             <div>I phone pro</div>
         </div>
         </div>
-      
     </section>
       </div>
+      <section class="spotlight">
+        <div class="s-head">In The Spotlight</div>
+        <div class="spot-contain">
+            <div class="s-card">
+                <img class="spot" src="../images/levis.webp" alt="">
+                <div class="from"><span class="rate">Minimum 70% Off </span></div>
+                <div class="s-ad">AD</div>
+            </div>
+             <div class="s-card">
+                <img class="spot" src="../images/4k tv.webp" alt="">
+                <div class="from"><span class="rate">From &#8377;599</span> </div>
+                 <div class="s-ad">AD</div>
+            </div>
+             <div class="s-card">
+                <img class="spot" src="../images/phone.webp" alt="">
+                <div class="from"><span class="rate">From &#8377;599</span> </div>
+                 <div class="s-ad">AD</div>
+            </div>
+             <div class="s-card">
+                <img class="spot" src="../images/smarttt.webp" alt="">
+                <div class="from"><span class="rate">Up To 60%Off</span></div>
+                 <div class="s-ad">AD</div>
+            </div>
+             <div class="s-card">
+                <img class="spot" src="../images/speaker.webp" alt="">
+                <div class="from"><span class="rate">From &#8377;599</span></div>
+                 <div class="s-ad">AD</div>
+            </div>
+        </div>
+      </section>
+      <section>
+        <img class="ban-2" src="../images/flipkart banner -2.webp" alt="">
+      </section>
+      <section class="suggest">
+         <div class="suggest-title">Suggested For You</div>
+         <div class="suggest-contain">
+            <div class="suggest-card">
+            <img class="su-card" src="../images/lenvo tab.webp" alt="">
+            <div class="rating">4.5 <span class="bi-star-half"></span></div>
+            <div class="des">Lenvo Tab pro...</div>
+            <div class="s-price">&#8377;31,999 <span class="s2">&#8377;40,999</span></div>
+            <div class="offer">&#8377;27,999 with bank offer</div>
+         </div>
+         <div class="suggest-card">
+            <img class="su-card" src="../images/mackbook.webp" alt="">
+            <div class="rating">4.5 <span class="bi-star-half"></span></div>
+            <div class="des">Mackbook Pro M3...</div>
+            <div class="s-price">&#8377;121,999 <span class="s2">&#8377;150,999</span></div>
+            <div class="offer">&#8377;111,999 with bank offer</div>
+         </div>
+             <div class="suggest-card">
+            <img class="su-card" src="../images/new buds.webp" alt="">
+            <div class="rating">4.5 <span class="bi-star-half"></span></div>
+            <div class="des">Noise Buds Neo...</div>
+            <div class="s-price">&#8377;1,299 <span class="s2">&#8377;1,699</span></div>
+            <div class="offer">&#8377;1,099 with bank offer</div>
+         </div>
+             <div class="suggest-card">
+            <img class="su-card" src="../images/earphone.webp" alt="">
+            <div class="rating">4.5 <span class="bi-star-half"></span></div>
+            <div class="des">Zebronics Z2 Ear...</div>
+            <div class="s-price">&#8377;799 <span class="s2">&#8377;999</span></div>
+            <div class="offer">&#8377;599 with bank offer</div>
+         </div>
+             <div class="suggest-card">
+            <img class="su-card" src="../images/realme phone.webp" alt="">
+            <div class="rating">4.5 <span class="bi-star-half"></span></div>
+            <div class="des">Realme P5 5G...</div>
+            <div class="s-price">&#8377;21,999 <span class="s2">&#8377;25,999</span></div>
+            <div class="offer">&#8377;19,999 with bank offer</div>
+         </div>
+         </div>
+      </section>
     <footer>
         <div class="left-column">
             <div>

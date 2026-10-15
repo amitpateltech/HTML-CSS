@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Document</title>
+    <style>
+        
+        nav div img{
+            border-radius: 9px;
+            height: 68px;
+            width: 60px;
+        }
+        nav div{
+            border: 1px solid gray;
+            width: 60px;
+            height: 68px;
+            margin: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        body{
+            display: grid;
+            grid-template-columns: 1fr 4fr 7fr;
+            font-family: Arial;
+        }
+        nav div:hover{
+            border:2px solid blue;
+        }
+        .name{
+            font-size: 24px;
+            margin-top: 100px;
+            width: 600px;
+            margin-bottom: 15px;
+        }
+        .detail a{
+            text-decoration: none;
+        }
+        .re{
+            border: 1px solid rgb(79, 78, 78);
+            width: 70px;
+            border-radius: 5px;
+            text-align: center;
+          
+        }
+        .gb{
+            border: 1px solid darkgray;
+            width: 45px;
+            text-align: center;
+            border-radius: 5px;
+            padding: 6px;
+            margin: 3px;
+        }
+        .size{
+            display: flex;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .star{
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+        }
+        .h{
+            border-top: 1px solid gray;
+            padding-top: 10px;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .re{
+            margin-bottom: 10px;
+        }
+        .detail{
+            margin-right: 250px;
+        }
+        .bi-star-fill{
+            color: rgb(218, 122, 20);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="../images/I1.jpg " target="view">
+                <img src="../images/I1.jpg"  alt="">
+            </a>
+        </div>
+         <div>
+            <a href="../images/I2.jpg" target="view">
+                <img src="../images/I2.jpg"  alt="">
+            </a>
+        </div>
+        <div>
+            <a href="../images/17-2.webp" target="view">
+                <img src="../images/I3.webp"  alt="">
+            </a>
+        </div>
+        <div>
+            <a href="../images/17-1.webp " target="view">
+                <img src="../images/17-1.webp"  alt="">
+            </a>
+        </div>
+    </nav>
+    <section>
+        <iframe src="../images/I1.jpg" name="view" frameborder="0" width="400" height="500"></iframe>
+    </section>
+    <section class="detail">
+        <div class="name">Apple iPhone 17 Pro Max, US Version, 256GB, eSIM, Deep Blue- Unlocked (Renewed)</div>
+        <a href="" >Visit the Amazon Renewed Store</a>
+        <div class="star">
+            <span>4.1</span>
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star-fill"></span>
+            <span class="bi bi-star"></span>
+            <span class="bi bi-chevron-down"></span>
+        </div>
+        <div class="re">
+            Renewed
+        </div>
+        <div class="h">This item cannot be shipped to your selected delivery location. Please  choose a different delivery location.</div>
+        <div>
+            <span>Size : <span> 256GB</span></span>
+        </div>
+        <div class="size">
+            <div class="gb">1TB</div>
+            <div class="gb">2TB</div>
+            <div class="gb">256GB</div>
+            <div class="gb">128GB</div>
+        </div>
+        <div>
+            <span>Color : <span> Cosmic Orange</span></span>
+        </div>
+    </section>
+</body>
+</html>

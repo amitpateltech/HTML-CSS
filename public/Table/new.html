@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Movie Dashboard</title>
+    <style>
+        body{
+            font-family: Arial;
+            font-size: 13px;
+            color: white;
+        }
+        .pagination{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            font-family: Arial;
+            font-style: 18px;
+            float: right;
+        }
+        .pagination li{
+            padding: 5px;
+            margin-right: 5px;
+            border: 1px solid gray;
+            width: 20px;
+            text-align: center;
+            color: white;
+            background-color: black;
+        }
+        tfoot{
+            font-size: 18px;
+            font-family: Arial;
+            color: purple;
+        }
+        #active-page{
+            background-color: red;
+        }
+        .bi-circle-fill{
+            font-size: 5px;
+           padding-right: 5px;
+        }
+        #now{
+      background-color: rgba(31, 135, 31, 0.5);
+            color: #00FF00;
+            width: 95px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            padding: 1px;
+        }
+        #date{
+            color: palevioletred;
+        }
+        table{
+            background-color: #111c3f;
+        }
+        #genre{
+            background-color: rgba(105, 102, 102, 0.4);
+            padding: 2px;
+            border-radius: 10px;
+            font-size: 11px;
+        }
+        #screen{
+            color: goldenrod;
+        }
+       
+         #now-1{
+      background-color: rgba(31, 135, 31, 0.5);
+            color: #00FF00;
+            width: 30px;
+            border-radius: 5px;
+          
+            font-size: 12px;
+            padding: 2px;
+        }
+        #buy{
+            color: palevioletred;
+        }
+        #actions{
+           color: palevioletred;
+        }
+        #head{
+            color: palevioletred;
+        }
+        #format{
+            color: rgb(14, 122, 230);
+        }
+        #dic{
+             color: rgb(14, 122, 230);
+        }
+        #time{
+            color: palevioletred;
+        }
+        .bi-square-fill{
+            font-size: 12px;
+            color: white;
+        }
+        #head{
+            text-align: left;
+        }
+        #pg{
+            color: palevioletred;
+        }
+        img{
+            border-radius: 5px;
+        }
+        th{
+            font-weight: normal;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <table width="100%"  cellpadding="5" rules="groups" > 
+        <thead>
+            <tr id="head">
+                <th><span class="bi bi-square-fill"></span></th>
+                <th>MOVIE DETAILS</th>
+                <th>GENERS & FORMAT</th>
+                <th>THEATRICAL WINDOW</th>
+                <th>ASSIGN SCREEN </th>
+                <th>TICKECTS & BOX OFFICE</th>
+                <th>ACTONS</th>
+            </tr>
+        </thead>
+        <tbody>
+           <tr>
+             <td><span class="bi bi-square-fill"></span></td>
+             <td>
+                <table>
+                    <tr>
+                        <td><img src="../images/dune-1.jpg" alt="" width="70" height="80"></td>
+                        <td>
+                            <div>Dune: Part Two <span id="pg">PGz:13</span></div>
+                            <div ><span id="time">2024. 2hr 46m .</span><span id="dic">Warner Bros.</span></div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <div>
+                    <span id="genre">Sci-Fi</span>
+                    <span id="genre">Adventure</span>
+                </div>
+                <div id="format">
+                    I MAX 15/70 Dolby Atoms
+                </div>
+            </td>
+            <td>
+                <div id="now">
+                    <span class="bi bi-circle-fill"></span>
+                    <span>Now Showing</span>
+                </div>
+                <div id="date">
+                    Mar 01,May 10, 2025
+                </div>
+            </td>
+            <td>
+                <div>Hall 1 (IMAX)/ Hall 2</div>
+                <div id="screen">8 sreens / day</div>
+            </td>
+            <td>
+                <div>$234,345</div>
+                <div id="tickets"><span id="buy">18,420 tickects</span> <span id="now-1">88 cap</span></div>
+            </td>
+            <td id="actions">
+                <span class="bi bi-pen-fill"></span>
+                <span class="bi bi-trash-fill"></span>
+                <span class="bi bi-three-dots-vertical"></span>
+            </td>
+           </tr>
+            <tr>
+             <td><span class="bi bi-square-fill"></span></td>
+             <td>
+                <table>
+                    <tr>
+                        <td><img src="../images/openhimer.webp" alt="" width="70" height="80"></td>
+                        <td>
+                            <div>Openhimer </div>
+                          <div ><span id="time">2024. 3hr  .</span><span id="dic">Christopher Nolan.</span></div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <div>
+                    <span id="genre">Sci-Fi</span>
+                    <span id="genre">Thriller</span>
+                </div>
+                <div id="format">
+                    I MAX 15/70 Dolby Atoms
+                </div>
+            </td>
+            <td>
+                <div id="now">
+                    <span class="bi bi-circle-fill"></span>
+                    <span>Now Showing</span>
+                </div>
+                <div id="date">
+                    July 01, 2023
+                </div>
+            </td>
+            <td>
+                <div>Hall 1 (IMAX)/ Hall 2</div>
+                <div id="screen">8 sreens / Day</div>
+            </td>
+            <td>
+                <div>$234,345</div>
+                <div class="tickets"><span id="buy">22,220 tickects</span>  <span id="now-1">88 cap</span></div>
+            </td>
+            <td id="actions">
+                <span class="bi bi-pen-fill"></span>
+                <span class="bi bi-trash-fill"></span>
+                <span class="bi bi-three-dots-vertical"></span>
+            </td>
+           </tr>
+           <tr>
+             <td><span class="bi bi-square-fill"></span></td>
+             <td>
+                <table>
+                    <tr>
+                        <td><img src="../images/cyberpunk.webp" alt="" width="70" height="80"></td>
+                        <td>
+                            <div>Cyberpunk:Neon Dawn </div>
+                          <div ><span id="time">2022. 2hr 16m .</span><span id="dic">Cartoon Hub</span></div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <div>
+                    <span id="genre">Sci-Fi</span>
+                    <span id="genre">Animation</span>
+                </div>
+                <div id="format">
+                    I MAX 15/70 Dolby Atoms
+                </div>
+            </td>
+            <td>
+                <div id="now">
+                    <span class="bi bi-circle-fill"></span>
+                    <span>Now Showing</span>
+                </div>
+                <div id="date">
+                    23,Mar 2022
+                </div>
+            </td>
+            <td>
+                <div>Hall 1 (IMAX)/ Hall 2</div>
+                <div id="screen">8 sreens / Day</div>
+            </td>
+            <td>
+                <div>$334,345</div>
+                <div class="tickets"><span id="buy">38,420 tickects</span>  <span id="now-1">88 cap</span></div>
+            </td>
+            <td id="actions">
+                <span class="bi bi-pen-fill"></span>
+                <span class="bi bi-trash-fill"></span>
+                <span class="bi bi-three-dots-vertical"></span>
+            </td>
+           </tr>
+           <tr>
+             <td><span class="bi bi-square-fill"></span></td>
+             <td>
+                <table>
+                    <tr>
+                        <td><img src="../images/avengers.avif" alt="" width="70" height="80"></td>
+                        <td>
+                            <div>Avengers Endgame:Encore </div>
+                          <div ><span id="time">2026. 3hr 15m .</span><span id="dic">Marvel Studion.</span></div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <div>
+                    <span id="genre">Sci-Fi</span>
+                    <span id="genre">Action</span>
+                </div>
+                <div id="format">
+                    I MAX 15/70 Dolby Atoms
+                </div>
+            </td>
+            <td>
+                <div id="now">
+                    <span class="bi bi-circle-fill"></span>
+                    <span>Now Showing</span>
+                </div>
+                <div id="date">
+                    02 Sep , 2026
+                </div>
+            </td>
+            <td>
+                <div>Hall 1 (IMAX)/ Hall 2</div>
+                <div id="screen">8 sreens / Day</div>
+            </td>
+            <td>
+                <div>$234,345</div>
+                <div class="tickets"><span id="buy">48,420 tickects</span>  <span id="now-1">88 cap</span></div>
+            </td>
+            <td id="actions">
+                <span class="bi bi-pen-fill"></span>
+                <span class="bi bi-trash-fill"></span>
+                <span class="bi bi-three-dots-vertical"></span>
+            </td>
+           </tr>
+           <tr>
+             <td><span class="bi bi-square-fill"></span></td>
+             <td>
+                <table>
+                    <tr>
+                        <td><img src="../images/newday.jpg" alt="" width="70" height="80"></td>
+                        <td>
+                            <div>SpiderMan:Brand New Day </div>
+                          <div ><span id="time">2026. 2hr 25m .</span><span id="dic">Sony Pictures.</span></div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <div>
+                    <span id="genre">Sci-Fi</span>
+                    <span id="genre">Action</span>
+                </div>
+                <div id="format">
+                    I MAX 15/70 Dolby Atoms
+                </div>
+            </td>
+            <td>
+                <div id="now">
+                    <span class="bi bi-circle-fill"></span>
+                    <span>Now Showing</span>
+                </div>
+                <div id="date">
+                    Mar 01,May 10, 2025
+                </div>
+            </td>
+            <td>
+                <div>Hall 1 (IMAX)/ Hall 2</div>
+                <div id="screen">8 sreens / Day</div>
+            </td>
+            <td>
+                <div>$234,345</div>
+                <div class="tickets"><span id="buy">28,420 tickects</span>  <span id="now-1">88 cap</span></div>
+            </td>
+            <td id="actions">
+                <span class="bi bi-pen-fill"></span>
+                <span class="bi bi-trash-fill"></span>
+                <span class="bi bi-three-dots-vertical"></span>
+            </td>
+           </tr>
+           <tr>
+             <td><span class="bi bi-square-fill"></span></td>
+             <td>
+                <table>
+                    <tr>
+                        <td><img src="../images/mandolorian.webp" alt="" width="70" height="80"></td>
+                        <td>
+                            <div>Mandolorian </div>
+                          <div ><span id="time">2026. 2hr 12m .</span><span id="dic">Jon Favreau.</span></div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <div>
+                    <span id="genre">Sci-Fi</span>
+                    <span id="genre">Suspence</span>
+                </div>
+                <div id="format">
+                    I MAX 15/70 Dolby Atoms
+                </div>
+            </td>
+            <td>
+                <div id="now">
+                    <span class="bi bi-circle-fill"></span>
+                    <span>Now Showing</span>
+                </div>
+                <div id="date">
+                    Mar 01,May 10, 2025
+                </div>
+            </td>
+            <td>
+                <div>Hall 1 (IMAX)/ Hall 2</div>
+                <div id="screen">8 sreens / Day</div>
+            </td>
+            <td>
+                <div>$234,345</div>
+                <div class="tickets"><span id="buy">18,420 tickects</span>  <span id="now-1">88 cap</span></div>
+            </td>
+            <td id="actions">
+                <span class="bi bi-pen-fill"></span>
+                <span class="bi bi-trash-fill"></span>
+                <span class="bi bi-three-dots-vertical"></span>
+            </td>
+           </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="4">
+                Showing 1 - 7 of 24 active titles
+            </td>
+            <td colspan="3">
+                <ul class="pagination">
+                    <li class="bi bi-chevron-left"></li>
+                    <li>1</li>
+                    <li id="active-page">2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li class="bi bi-chevron-right"></li>
+                </ul>
+            </td>
+        </tfoot>
+    </table>
+</body>
+</html>

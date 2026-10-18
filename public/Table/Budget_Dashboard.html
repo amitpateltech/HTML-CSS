@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial;
+        }
+        th{
+            text-align: left;
+        }
+        caption{
+            text-align: left;
+            margin-left: 30px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #main{
+            background-color: rgb(179, 175, 175);
+        }
+        #tb{
+            background-color: white;
+            border-radius: 10px;
+            margin-left: 30px;
+         
+        }
+        #gro{
+            background-color: white;
+            border-radius: 10px;
+        }
+      #groceries{
+            text-align: right;
+            color: blue;
+       
+        }
+        .progress-bar{
+            height: 100%;
+            width: 84%;
+            background-color: rgb(38, 21, 193);
+            border-radius: 10px;
+            padding-right: 10px;
+            overflow: hidden;
+        }
+        #bar{
+            display: flex; 
+            align-items: center;
+             background-color: #a3a3a6;
+             height: 10px;
+             width: 210px;
+              border-radius: 10px;
+        }  
+        .bar-1{
+           height: 100%;
+            width: 100%;
+            background-color: rgb(216, 15, 15);
+            border-radius: 10px;
+            padding-right: 10px;
+            overflow: hidden;
+        }  
+         .bar-2{
+           height: 100%;
+            width: 100%;
+            background-color: rgb(216, 15, 15);
+            border-radius: 10px;
+            padding-right: 10px;
+            overflow: hidden;
+        }
+        .bi-exclamation-triangle-fill{
+            color: goldenrod;
+        } 
+        .bar-5{
+             height: 100%;
+            width: 96%;
+            background-color: rgb(38, 21, 193);
+            border-radius: 10px;
+            padding-right: 10px;
+            overflow: hidden;
+        } 
+        #cp{
+            text-align: left;
+            margin-left: 8px;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table id="main" width="100%" cellpadding="10" >
+     
+        <tr>
+            <td>
+                <table id="tb" width="93%" rules="all"   cellpadding="10">
+                    <caption id="cp">Overview Summary</caption>
+                    <tr>
+                        <th>Title</th>
+                        <th>Value</th>
+                        <th>Subtext</th>
+                    </tr>
+                    <tr>
+                        <td>Total Budget</td>
+                        <td>$3,000.00</td>
+                        <td>Across all categories</td>
+                        <td><span class="bi bi-wallet"></span></td>
+                    </tr>
+                     <tr>
+                        <td>Spent so far</td>
+                        <td>$2,230.00</td>
+                        <td>74% of monthly budget</td>
+                        <td><span class="bi bi-cash-stack"></span></td>
+                    </tr>
+                     <tr>
+                        <td>Remaining</td>
+                        <td>$770.00</td>
+                        <td>26%left</td>
+                        <td><span class="bi bi-piggy-bank"></span></td>
+                    </tr>
+                     <tr>
+                        <td>Over-spernt</td>
+                        <td>2 categories</td>
+                        <td>Dinning, Subscription</td>
+                        <td><span class="bi bi-basket"></span></td>
+                    </tr>
+                    
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table cellspacing="27">
+                    <caption>Budget Breakdown by Category</caption>
+                    <tr>
+                        <td>
+                            <table id="gro" cellpadding="15" cellspacing="20" height="220px" >
+                               <tr>
+                                 <td>Groceries</td>
+                                 <td>&nbsp;</td>
+                                <td id="groceries" >
+                                    <span class="bi bi-trash-fill"></span>
+                                    <span class="bi bi-pen-fill"></span>
+                                </td>
+                               </tr>
+                               <tr>
+                                <td>
+                                    <div>Budgeted</div>
+                                    <div>$500</div>
+                                </td>
+                                  <td>
+                                    <div>Spent</div>
+                                    <div>$420.25</div>
+                                </td>
+                                  <td>
+                                    <div>Remaining</div>
+                                    <div>$79.75</div>
+                                </td>
+                               </tr>
+                               <tr>
+                                <td colspan="2">
+                                 <div id="bar" >
+                                       <div class="progress-bar"></div>
+                                       
+                                 </div>
+                                    
+                                </td>
+                                <td><span>84%</span></td>
+                               </tr>
+                            </table>
+                        </td>
+                        <td>
+                             <table id="gro" cellpadding="15" cellspacing="20" height="200px" >
+                               <tr>
+                                 <td>Dinning</td>
+                                 <td>&nbsp;</td>
+                                <td id="groceries" >
+                                    <span class="bi bi-trash-fill"></span>
+                                    <span class="bi bi-pen-fill"></span>
+                                </td>
+                               </tr>
+                               <tr>
+                                <td>
+                                    <div>Budgeted</div>
+                                    <div>$300</div>
+                                </td>
+                                  <td>
+                                    <div>Spent</div>
+                                    <div>$340.25</div>
+                                </td>
+                                  <td>
+                                    <div>Remaining</div>
+                                    <div>$40.00</div>
+                                </td>
+                               </tr>
+                               <tr>
+                                <td colspan="2">
+                                 <div id="bar" >
+                                       <div class="progress-bar bar-1"></div>      
+                                 </div>
+                                    
+                                </td>
+                                <td>
+                                    <span>113%</span>
+                                    <span class="bi bi-exclamation-triangle-fill"></span>
+                                </td>
+                               </tr>
+                            </table>
+                        </td>
+                        <td>
+                             <table id="gro" cellpadding="15" cellspacing="20" height="200px" >
+                               <tr>
+                                 <td>Transport</td>
+                                 <td>&nbsp;</td>
+                                <td id="groceries" >
+                                    <span class="bi bi-trash-fill"></span>
+                                    <span class="bi bi-pen-fill"></span>
+                                </td>
+                               </tr>
+                               <tr>
+                                <td>
+                                    <div>Budgeted</div>
+                                    <div>$200</div>
+                                </td>
+                                  <td>
+                                    <div>Spent</div>
+                                    <div>$165.25</div>
+                                </td>
+                                  <td>
+                                    <div>Remaining</div>
+                                    <div>$35.00</div>
+                                </td>
+                               </tr>
+                               <tr>
+                                <td colspan="2">
+                                 <div id="bar" >
+                                       <div class="progress-bar"></div>
+                                       
+                                 </div>
+                                    
+                                </td>
+                                <td><span>84%</span></td>
+                               </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                             <table id="gro" cellpadding="15" cellspacing="20" height="200px" >
+                               <tr>
+                                 <td>Subscriptions</td>
+                                 <td>&nbsp;</td>
+                                <td id="groceries" >
+                                    <span class="bi bi-trash-fill"></span>
+                                    <span class="bi bi-pen-fill"></span>
+                                </td>
+                               </tr>
+                               <tr>
+                                <td>
+                                    <div>Budgeted</div>
+                                    <div>$150</div>
+                                </td>
+                                  <td>
+                                    <div>Spent</div>
+                                    <div>$160.00</div>
+                                </td>
+                                  <td>
+                                    <div>Remaining</div>
+                                    <div>$-10.00</div>
+                                </td>
+                               </tr>
+                               <tr>
+                                <td colspan="2">
+                                <div id="bar" >
+                                <div class="progress-bar bar-2"></div>
+                                </div>       
+                                </td>
+                                <td>
+                                    <span>106%</span>
+                                    <span class="bi bi-exclamation-triangle-fill"></span>
+                                </td>
+                               </tr>
+                            </table>
+                        </td>
+                        <td> <table id="gro" cellpadding="15" cellspacing="20" height="200px" >
+                               <tr>
+                                 <td>Utilities</td>
+                                 <td>&nbsp;</td>
+                                <td id="groceries" >
+                                    <span class="bi bi-trash-fill"></span>
+                                    <span class="bi bi-pen-fill"></span>
+                                </td>
+                               </tr>
+                               <tr>
+                                <td>
+                                    <div>Budgeted</div>
+                                    <div>$250</div>
+                                </td>
+                                  <td>
+                                    <div>Spent</div>
+                                    <div>$240.00</div>
+                                </td>
+                                  <td>
+                                    <div>Remaining</div>
+                                    <div>$10.00</div>
+                                </td>
+                               </tr>
+                               <tr>
+                                <td colspan="2">
+                                 <div id="bar" >
+                                       <div class="progress-bar bar-5"></div>
+                                       
+                                 </div>
+                                    
+                                </td>
+                                <td><span>96%</span></td>
+                               </tr>
+                            </table></td>
+                            <td>
+                                 <table id="gro" cellpadding="15" cellspacing="20" height="200px" >
+                               <tr>
+                                 <td>Entertainment</td>
+                                 <td>&nbsp;</td>
+                                <td id="groceries" >
+                                    <span class="bi bi-trash-fill"></span>
+                                    <span class="bi bi-pen-fill"></span>
+                                </td>
+                               </tr>
+                               <tr>
+                                <td>
+                                    <div>Budgeted</div>
+                                    <div>$300</div>
+                                </td>
+                                  <td>
+                                    <div>Spent</div>
+                                    <div>$190.25</div>
+                                </td>
+                                  <td>
+                                    <div>Remaining</div>
+                                    <div>$50.75</div>
+                                </td>
+                               </tr>
+                               <tr>
+                                <td colspan="2">
+                                 <div id="bar" >
+                                       <div class="progress-bar"></div>       
+                                 </div>                                
+                                </td>
+                                <td><span>84%</span></td>
+                               </tr>
+                            </table>
+                            </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

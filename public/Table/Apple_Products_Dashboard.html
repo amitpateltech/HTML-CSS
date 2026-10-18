@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body{
+            border: 1px solid;
+            box-shadow: 2px 2px 2px gray;
+            font-family: Arial;
+            font-size: 15px;
+        }
+    .head{
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        font-family: Arial;
+        color: rgb(115, 114, 114);
+    }
+    .bi-fan{
+        color: blue;
+        font-size: 22px;
+    }
+    .name{
+        font-size: 18px;
+        font-weight: bold;
+        padding-left: 10px;
+        color: black;
+    }
+    .sec span{
+        padding-left: 5px;
+    }
+    .money{
+        font-size: 40px;
+        font-weight: bold;
+        padding-right: 10px;
+    }
+   
+    #first{
+        text-align: left;
+        padding-left: 43px;
+    }
+    .sub{
+        color: gray;
+        font-weight:lighter; 
+    }
+    .month{
+        color: gray;
+        padding-right: 70px;
+    }
+    .bi-arrow-up{
+        color: rgb(43, 159, 43);
+    }
+    .bi-arrow-down{
+        color: red;
+    }
+    caption{
+        border: 1px solid;
+        
+    }
+    #heading{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+       padding-left: 50px;
+    }
+    #h{
+        font-weight: lighter;
+    }
+    img{
+        width: 30px;
+    }
+    .bi-square-fill{
+        color: white;
+        border:1px solid gray;
+        font-size: 9px;
+        border-radius: 2px;
+    }
+    #tp{
+        text-align: left;
+        padding-left: 45px;
+    }
+    #brand{
+        display: flex;
+        align-items: center;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <div class="sec">
+                <span class="bi bi-fan"></span>
+                <span class="name">Sellora</span>
+            </div>
+            <div class="sec">
+                <span class="bi bi-grid"></span>
+                <span>Dashboard</span>
+            </div>
+            <div class="sec">
+                <span class="bi bi-box"></span>
+                <span>Products</span>
+            </div>
+            <div class="sec">
+                <span class="bi bi-clipboard"></span>
+                <span>Orders</span>
+            </div>
+            <div class="sec">
+                <span class="bi bi-megaphone"></span>
+                <span>Marketing</span>
+            </div>
+            <div class="sec">
+                <span class="bi bi-pie-chart"></span>
+                <span>Analytics</span>
+            </div>
+            <div class="sec">
+                <span class="bi bi-search"></span>
+                <span>Search Anything...</span>
+            </div>
+            <div class="bi bi-question-circle"></div>
+        </div>
+    </header>
+    <table id="first"  cellpadding="10" cellspacing=""  >
+        <thead>
+            <tr >
+                <th><div>Total Sales</div>
+                <div class="sub">Total earnings from sales.</div></th>
+                <th><span class="bi bi-grip-horizontal"></span></th>
+                <th><div>Total Sales</div>
+                <div class="sub">Total from store transactions.</div></th>
+                <th><span class="bi bi-grip-horizontal"></span></th>
+                    <th><div>Total Sales</div>
+                <div class="sub">Total disputes ordered product.</div></th>
+                <th><span class="bi bi-grip-horizontal"></span></th>
+                    <th><div>Total Sales</div>
+                <div class="sub">Total refunds ordered product.</div></th>
+                 <th><span class="bi bi-grip-horizontal"></span></th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>
+               <span class="money">$189,374</span>
+               <span class="bi bi-arrow-up"><span>9%</span></span>
+               
+                </td>
+                <td>&nbsp;</td>
+                 <td>
+               <span class="money">4,138</span>
+               <span class="bi bi-arrow-down">  <span>2%</span></span>
+             
+                </td>
+                <td>&nbsp;</td>
+                 <td>
+               <span class="money">76</span>
+               <span class="bi bi-arrow-up"> <span>5%</span></span>
+               
+                </td>
+                 <td>&nbsp;</td>
+                  <td>
+               <span class="money">$,495</span>
+               <span class="bi bi-arrow-down">   <span>11%</span></span>
+                </td>
+                   <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="month">From last month</span>
+                    <span>See detail <span class="bi bi-arrow-right"></span></span>
+                </td>
+                 <td>&nbsp;</td>
+                 <td>
+                    <span class="month">From last month</span>
+                    <span>See detail <span class="bi bi-arrow-right"></span></span>
+                </td>
+                 <td>&nbsp;</td>
+                 <td>
+                    <span class="month">From last month</span>
+                    <span>See detail <span class="bi bi-arrow-right"></span></span>
+                </td>
+                 <td>&nbsp;</td>
+                 <td>
+                    <span class="month">From last month</span>
+                    <span>See detail <span class="bi bi-arrow-right"></span></span>
+                </td>
+                 <td>&nbsp;</td>
+            </tr>
+        </tbody>
+    </table>
+    <table id="tp" border="1" cellpadding="10">
+        <div id="heading">
+           <div>
+             <div class="title">Product Transaction</div>
+            <div class="subtitle">Latest Transaction sales in real time</div>
+           </div>
+            <div>
+                <span class="bi bi-sliders"></span>
+                <span>Filter</span>
+                <span></span>
+                <span class="bi bi-layout-sidebar">Customize</span>
+            </div>
+        </div>
+        <tr>
+            <th><span class="bi bi-square-fill"></span></th>
+            <th id="h">Order ID <span class="bi bi-chevron-expand"></span></th>
+            <th id="h">Product Name</th>
+            <th id="h">Order Date</th>
+            <th id="h">Customer Name</th>
+            <th id="h">Payment</th>
+            <th id="h">Payment Status</th>
+            <th id="h">Total Price</th>
+            <th id="h">Quantity</th>
+            <th id="h">Order Status</th>
+        </tr>
+        <tr>
+           <td><span class="bi bi-square-fill"></span></td> 
+           <td>#SLR132131-BN</td>
+           <td>
+           <div id="brand"> 
+            <img src="../images/realme phone.webp" alt="">
+            <span>Apple iPad (Gen 10)</span></div>
+        </td>
+           <td>13 Febuary, 2025</td>
+           <td>Anika Dokidis</td>
+           <td>COD</td>
+           <td>
+            <div class="payment">
+                <span class="bi bi-circle-fill"></span>
+                <span>Un Paid</span>
+            </div>
+        </td>
+        <td>$499</td>
+        <td>1 Pcs</td>
+        <td> 
+        <div class="status">
+            <span class="bi bi-circle-fill"></span>
+            <span>Processing</span>
+        </div>
+      </td>
+        </tr>
+    </table>
+</body>
+</html>

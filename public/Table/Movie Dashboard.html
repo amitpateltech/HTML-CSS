@@ -81,12 +81,15 @@
         }
         #actions{
            color: palevioletred;
+         
         }
         #head{
             color: palevioletred;
         }
         #format{
             color: rgb(14, 122, 230);
+            padding-top: 5px;
+            font-size: 12px;
         }
         #dic{
              color: rgb(14, 122, 230);
@@ -100,6 +103,7 @@
         }
         #head{
             text-align: left;
+            background-color: #071030;
         }
         #pg{
             color: palevioletred;
@@ -111,10 +115,20 @@
             font-weight: normal;
             font-size: 12px;
         }
+        #actions span{
+            padding-right: 10px;
+        }
+        #hall{
+            color: skyblue;
+        }
+       #movie{
+        color: rgb(28, 158, 209);
+       }
+       
     </style>
 </head>
 <body>
-    <table width="100%"  cellpadding="5" rules="groups" > 
+    <table width="100%" cellspacing="5"  cellpadding="4" rules="groups" > 
         <thead>
             <tr id="head">
                 <th><span class="bi bi-square-fill"></span></th>
@@ -130,18 +144,18 @@
            <tr>
              <td><span class="bi bi-square-fill"></span></td>
              <td>
-                <table>
+                <table cellspacing="10">
                     <tr>
                         <td><img src="../images/dune-1.jpg" alt="" width="70" height="80"></td>
                         <td>
-                            <div>Dune: Part Two <span id="pg">PGz:13</span></div>
+                            <div id="movie">Dune: Part Two <span id="pg">PGz:13</span></div>
                             <div ><span id="time">2024. 2hr 46m .</span><span id="dic">Warner Bros.</span></div>
                         </td>
                     </tr>
                 </table>
             </td>
             <td>
-                <div>
+                <div id="type">
                     <span id="genre">Sci-Fi</span>
                     <span id="genre">Adventure</span>
                 </div>
@@ -155,16 +169,16 @@
                     <span>Now Showing</span>
                 </div>
                 <div id="date">
-                    Mar 01,May 10, 2025
+                     Mar 01, 2025
                 </div>
             </td>
             <td>
-                <div>Hall 1 (IMAX)/ Hall 2</div>
+                <div id="hall">Hall 1 (IMAX)/ Hall 2</div>
                 <div id="screen">8 sreens / day</div>
             </td>
             <td>
                 <div>$234,345</div>
-                <div id="tickets"><span id="buy">18,420 tickects</span> <span id="now-1">88 cap</span></div>
+                <div id="tickets"><span id="buy">18,420 tickects</span> <span id="now-1">88% cap</span></div>
             </td>
             <td id="actions">
                 <span class="bi bi-pen-fill"></span>
@@ -175,11 +189,11 @@
             <tr>
              <td><span class="bi bi-square-fill"></span></td>
              <td>
-                <table>
+                <table cellspacing="10">
                     <tr>
                         <td><img src="../images/openhimer.webp" alt="" width="70" height="80"></td>
                         <td>
-                            <div>Openhimer </div>
+                            <div id="movie">Openhimer </div>
                           <div ><span id="time">2024. 3hr  .</span><span id="dic">Christopher Nolan.</span></div>
                         </td>
                     </tr>
@@ -187,8 +201,8 @@
             </td>
             <td>
                 <div>
-                    <span id="genre">Sci-Fi</span>
-                    <span id="genre">Thriller</span>
+                    <span id="genre">Biography</span>
+                    <span id="genre">Drama</span>
                 </div>
                 <div id="format">
                     I MAX 15/70 Dolby Atoms
@@ -204,12 +218,12 @@
                 </div>
             </td>
             <td>
-                <div>Hall 1 (IMAX)/ Hall 2</div>
-                <div id="screen">8 sreens / Day</div>
+                <div id="hall">Hall 1 (IMAX)/ Hall 2</div>
+                <div id="screen">6 sreens / Day</div>
             </td>
             <td>
                 <div>$234,345</div>
-                <div class="tickets"><span id="buy">22,220 tickects</span>  <span id="now-1">88 cap</span></div>
+                <div class="tickets"><span id="buy">22,220 tickects</span>  <span id="now-1">88% cap</span></div>
             </td>
             <td id="actions">
                 <span class="bi bi-pen-fill"></span>
@@ -220,11 +234,11 @@
            <tr>
              <td><span class="bi bi-square-fill"></span></td>
              <td>
-                <table>
+                <table cellspacing="10">
                     <tr>
                         <td><img src="../images/cyberpunk.webp" alt="" width="70" height="80"></td>
                         <td>
-                            <div>Cyberpunk:Neon Dawn </div>
+                            <div id="movie">Cyberpunk:Neon Dawn </div>
                           <div ><span id="time">2022. 2hr 16m .</span><span id="dic">Cartoon Hub</span></div>
                         </td>
                     </tr>
@@ -249,12 +263,12 @@
                 </div>
             </td>
             <td>
-                <div>Hall 1 (IMAX)/ Hall 2</div>
-                <div id="screen">8 sreens / Day</div>
+                <div id="hall">Hall 1 (DOLBY)/ Hall 2</div>
+                <div id="screen">6 sreens / Day</div>
             </td>
             <td>
                 <div>$334,345</div>
-                <div class="tickets"><span id="buy">38,420 tickects</span>  <span id="now-1">88 cap</span></div>
+                <div class="tickets"><span id="buy">38,420 tickects</span>  <span id="now-1">88% cap</span></div>
             </td>
             <td id="actions">
                 <span class="bi bi-pen-fill"></span>
@@ -265,11 +279,11 @@
            <tr>
              <td><span class="bi bi-square-fill"></span></td>
              <td>
-                <table>
+                <table cellspacing="10">
                     <tr>
                         <td><img src="../images/avengers.avif" alt="" width="70" height="80"></td>
                         <td>
-                            <div>Avengers Endgame:Encore </div>
+                            <div id="movie">Avengers Endgame:Encore </div>
                           <div ><span id="time">2026. 3hr 15m .</span><span id="dic">Marvel Studion.</span></div>
                         </td>
                     </tr>
@@ -294,12 +308,12 @@
                 </div>
             </td>
             <td>
-                <div>Hall 1 (IMAX)/ Hall 2</div>
-                <div id="screen">8 sreens / Day</div>
+                <div id="hall">Hall 1 (70MM Rig)/ Hall 2</div>
+                <div id="screen">4 sreens / Day</div>
             </td>
             <td>
                 <div>$234,345</div>
-                <div class="tickets"><span id="buy">48,420 tickects</span>  <span id="now-1">88 cap</span></div>
+                <div class="tickets"><span id="buy">48,420 tickects</span>  <span id="now-1">88% cap</span></div>
             </td>
             <td id="actions">
                 <span class="bi bi-pen-fill"></span>
@@ -310,11 +324,11 @@
            <tr>
              <td><span class="bi bi-square-fill"></span></td>
              <td>
-                <table>
+                <table cellspacing="10">
                     <tr>
                         <td><img src="../images/newday.jpg" alt="" width="70" height="80"></td>
                         <td>
-                            <div>SpiderMan:Brand New Day </div>
+                            <div id="movie">SpiderMan:Brand New Day </div>
                           <div ><span id="time">2026. 2hr 25m .</span><span id="dic">Sony Pictures.</span></div>
                         </td>
                     </tr>
@@ -335,16 +349,16 @@
                     <span>Now Showing</span>
                 </div>
                 <div id="date">
-                    Mar 01,May 10, 2025
+                    Mar 01,2025
                 </div>
             </td>
             <td>
-                <div>Hall 1 (IMAX)/ Hall 2</div>
-                <div id="screen">8 sreens / Day</div>
+                <div id="hall">Hall 1 (IMAX)/ Hall 2</div>
+                <div id="screen">4 sreens / Day</div>
             </td>
             <td>
                 <div>$234,345</div>
-                <div class="tickets"><span id="buy">28,420 tickects</span>  <span id="now-1">88 cap</span></div>
+                <div class="tickets"><span id="buy">28,420 tickects</span>  <span id="now-1">88% cap</span></div>
             </td>
             <td id="actions">
                 <span class="bi bi-pen-fill"></span>
@@ -355,11 +369,11 @@
            <tr>
              <td><span class="bi bi-square-fill"></span></td>
              <td>
-                <table>
+                <table cellspacing="10">
                     <tr>
                         <td><img src="../images/mandolorian.webp" alt="" width="70" height="80"></td>
                         <td>
-                            <div>Mandolorian </div>
+                            <div id="movie">Star Wars:Mandolorian and Grogu</div>
                           <div ><span id="time">2026. 2hr 12m .</span><span id="dic">Jon Favreau.</span></div>
                         </td>
                     </tr>
@@ -380,18 +394,18 @@
                     <span>Now Showing</span>
                 </div>
                 <div id="date">
-                    Mar 01,May 10, 2025
+                   May 10, 2025
                 </div>
             </td>
             <td>
-                <div>Hall 1 (IMAX)/ Hall 2</div>
+                <div id="hall">Hall 1 (IMAX)/ Hall 2</div>
                 <div id="screen">8 sreens / Day</div>
             </td>
             <td>
                 <div>$234,345</div>
-                <div class="tickets"><span id="buy">18,420 tickects</span>  <span id="now-1">88 cap</span></div>
+                <div class="tickets"><span id="buy">18,420 tickects</span>  <span id="now-1">88% cap</span></div>
             </td>
-            <td id="actions">
+            <td id="actions" >
                 <span class="bi bi-pen-fill"></span>
                 <span class="bi bi-trash-fill"></span>
                 <span class="bi bi-three-dots-vertical"></span>

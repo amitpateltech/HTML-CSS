@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <style>
         body{
-            border: 1px solid;
+           
             box-shadow: 2px 2px 2px gray;
             font-family: Arial;
             font-size: 15px;
+            background-color: rgb(242, 241, 239);
+            border-radius: 10px;
         }
     .head{
         display: flex;
@@ -65,6 +67,7 @@
         flex-direction: row;
         justify-content: space-between;
        padding-left: 50px;
+        padding-right: 80px;
     }
     #h{
         font-weight: lighter;
@@ -81,10 +84,85 @@
     #tp{
         text-align: left;
         padding-left: 45px;
+       
     }
     #brand{
         display: flex;
         align-items: center;
+    }
+    .payment{
+        background-color: rgba(255, 0, 0, 0.3);
+        color: red;
+        width: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2px;
+        border-radius: 8px;
+    }
+    .bi-circle-fill{
+        font-size: 5px;
+        padding-right: 5px;
+    }
+    .status{
+        background-color: rgb(33, 167, 221);
+        color: white;
+        padding: 8px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .title{
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .subtitle{
+        color: gray;
+    }
+    .icon span{
+        margin-left: 5px;
+    }
+    .pending{
+         background-color: rgba(205, 211, 22, 0.3);
+        color: goldenrod;
+        width: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2px;
+        border-radius: 8px;
+    }
+    .shiped{
+        background-color: rgb(139, 64, 236);
+        color: white;
+        padding: 8px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .paid{
+         background-color: rgba(63, 172, 8, 0.3);
+        color: rgb(5, 185, 41);
+        width: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2px;
+        border-radius: 8px;
+    }
+    .delivered{
+        background-color: rgb(35, 24, 235);
+        color: white;
+        padding: 8px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #tp th{
+        color: rgb(109, 108, 108);
     }
     </style>
 </head>
@@ -190,17 +268,18 @@
             </tr>
         </tbody>
     </table>
-    <table id="tp" border="1" cellpadding="10">
+    <table id="tp"  cellpadding="10">
         <div id="heading">
            <div>
              <div class="title">Product Transaction</div>
             <div class="subtitle">Latest Transaction sales in real time</div>
            </div>
-            <div>
+            <div class="icon">
                 <span class="bi bi-sliders"></span>
                 <span>Filter</span>
                 <span></span>
-                <span class="bi bi-layout-sidebar">Customize</span>
+                <span class="bi bi-layout-sidebar"></span>
+                <span>Customize</span>
             </div>
         </div>
         <tr>
@@ -233,6 +312,162 @@
             </div>
         </td>
         <td>$499</td>
+        <td>1 Pcs</td>
+        <td> 
+        <div class="status">
+            <span class="bi bi-circle-fill"></span>
+            <span>Processing</span>
+        </div>
+      </td>
+        </tr>
+        <tr>
+           <td><span class="bi bi-square-fill"></span></td> 
+           <td>#SLR132130-BN</td>
+           <td>
+           <div id="brand"> 
+            <img src="../images/I1.jpg" alt="">
+            <span>Apple iphone 13</span></div>
+        </td>
+           <td>13 Febuary, 2025</td>
+           <td>Randy Ekstorm</td>
+           <td>Bank Transfer</td>
+           <td>
+            <div class="pending">
+                <span class="bi bi-circle-fill"></span>
+                <span>Pending</span>
+            </div>
+        </td>
+        <td>$1,198</td>
+        <td>2 Pcs</td>
+        <td> 
+        <div class="shiped">
+            <span class="bi bi-circle-fill"></span>
+            <span>Shiped</span>
+        </div>
+      </td>
+        </tr>
+         <tr>
+           <td><span class="bi bi-square-fill"></span></td> 
+           <td>#SLR132131-BN</td>
+           <td>
+           <div id="brand"> 
+            <img src="../images/mackbook.webp" alt="">
+            <span>Apple Mackbook Air M2</span></div>
+        </td>
+           <td>13 Febuary, 2025</td>
+           <td>Mira Curtis</td>
+           <td>Credit Card</td>
+           <td>
+            <div class="paid">
+                <span class="bi bi-circle-fill"></span>
+                <span>Paid</span>
+            </div>
+        </td>
+        <td>$999</td>
+        <td>1 Pcs</td>
+        <td> 
+        <div class="shiped">
+            <span class="bi bi-circle-fill"></span>
+            <span>Shiped</span>
+        </div>
+      </td>
+        </tr>
+          <tr>
+           <td><span class="bi bi-square-fill"></span></td> 
+           <td>#SLR132131-BN</td>
+           <td>
+           <div id="brand"> 
+            <img src="../images/I2.jpg" alt="">
+            <span>Apple iMackbook 2023</span></div>
+        </td>
+           <td>13 Febuary, 2025</td>
+           <td>Harnna Baptista</td>
+           <td>Credit Card</td>
+           <td>
+            <div class="pending">
+                <span class="bi bi-circle-fill"></span>
+                <span>Pending</span>
+            </div>
+        </td>
+        <td>$5,196</td>
+        <td>4 Pcs</td>
+        <td> 
+        <div class="status">
+            <span class="bi bi-circle-fill"></span>
+            <span>Processing</span>
+        </div>
+      </td>
+        </tr>
+          <tr>
+           <td><span class="bi bi-square-fill"></span></td> 
+           <td>#SLR132131-BN</td>
+           <td>
+           <div id="brand"> 
+            <img src="../images/buds.jpg" alt="">
+            <span>Apple Airpods 4</span></div>
+        </td>
+           <td>13 Febuary, 2025</td>
+           <td>Afonso Botosh</td>
+           <td>Bank Transfer</td>
+           <td>
+            <div class="paid">
+                <span class="bi bi-circle-fill"></span>
+                <span>Paid</span>
+            </div>
+        </td>
+        <td>$249</td>
+        <td>1 Pcs</td>
+        <td> 
+        <div class="delivered">
+            <span class="bi bi-circle-fill"></span>
+            <span>Delevered</span>
+        </div>
+      </td>
+        </tr>
+        <tr>
+           <td><span class="bi bi-square-fill"></span></td> 
+           <td>#SLR132131-BN</td>
+           <td>
+           <div id="brand"> 
+            <img src="../images/I3.webp" alt="">
+            <span>Apple iPhone 15</span></div>
+        </td>
+           <td>13 Febuary, 2025</td>
+           <td>Marylin Rosser</td>
+           <td>Credit Card</td>
+           <td>
+            <div class="pending">
+                <span class="bi bi-circle-fill"></span>
+                <span>Pending</span>
+            </div>
+        </td>
+        <td>$249</td>
+        <td>1 Pcs</td>
+        <td> 
+        <div class="delivered">
+            <span class="bi bi-circle-fill"></span>
+            <span>Delevered</span>
+        </div>
+      </td>
+        </tr>
+        <tr>
+           <td><span class="bi bi-square-fill"></span></td> 
+           <td>#SLR132131-BN</td>
+           <td>
+           <div id="brand"> 
+            <img src="../images/dell.jpeg" alt="">
+            <span>Dell XPS 15</span></div>
+        </td>
+           <td>13 Febuary, 2025</td>
+           <td>Kedin Herwitz Botosh</td>
+           <td>COD</td>
+           <td>
+            <div class="payment">
+                <span class="bi bi-circle-fill"></span>
+                <span>Un Paid</span>
+            </div>
+        </td>
+        <td>$1,799</td>
         <td>1 Pcs</td>
         <td> 
         <div class="status">

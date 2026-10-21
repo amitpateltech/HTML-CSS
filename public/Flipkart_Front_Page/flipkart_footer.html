@@ -19,12 +19,11 @@
             border-left: 1px solid;
             display: grid;
             grid-template-columns: 6fr 6fr;
-            
+            grid-gap: 70px;
         }
         footer{
             margin-top: 50px;
-            display: grid;
-            grid-template-columns: 6fr 6fr;
+           
             background-color: rgb(29, 28, 42);
             color: white;
             padding: 50px;
@@ -385,6 +384,10 @@
      }
    .big1{
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
    }
    .mt{
       font-size: 82px;
@@ -400,12 +403,11 @@
       font-family: Arial;
    }
    .r2{
-      background-color: goldenrod;
+      background-color: rgb(243, 184, 36);
       width: 800px;
      display: flex;
      justify-content: center;
      align-items: center;
-     margin-left: 300px;
      border-radius: 7px;
      padding: 13px;
      margin-top: 20px;
@@ -430,11 +432,11 @@
       position: relative;
    }
    .pink{
-      background-color: palevioletred;
+      background-color: rgb(223, 73, 123);
       border-radius: 10px;
       padding: 20px;
       width: 720px;
-      height: 150px;
+      height: 170px;
       border: 2px dashed goldenrod;
      display: flex;
      flex-direction: column;
@@ -444,16 +446,54 @@
    .flower{
       width: 50px;
       position: absolute;
-      top: 0px;
-      left: 517px;
+      top: -3px;
+      left: 32px;
    }
    .r1{
       position: relative;
    }
    .bi-stars{
       font-size: 52px;
-      color: rgb(187, 139, 18);
+      color: rgb(199, 151, 30);
    }
+   .p{
+      width: 125px;
+      position: absolute;
+      bottom: -27px;
+      right: 1px;
+   }
+   .p2{
+      width: 110px;
+      position: absolute;
+      bottom: -32px;
+      left: 1px;
+   }
+   .plogo img{
+      width: 45px;
+    
+   }
+   .plogo{
+   
+     margin-left: 10px;
+   }
+   .bottom{
+    width:100%;
+     display: flex;
+     border-top: 1px solid gray;
+     padding-top: 35px;
+     font-size: 14px;
+   }
+   .bottom div {
+      margin-right: 60px;
+   }
+   .rl{
+      display: flex;
+      padding-bottom: 15px;
+   }
+   .bottom .l{
+      color: yellow;
+   }
+
     </style>
 </head>
 <body>
@@ -591,12 +631,12 @@
             <div>Airpods Pro 3</div>
         </div>
         <div class="card-1"> 
-            <img class="products" src="../images/tv.jpg" alt="">
+            <img class="products" src="../images/4k tv.webp" alt="">
             <div class="price">40% Off &#8377;20,999</div>
             <div>Mi 4k Tv</div>
         </div>
          <div class="card-1"> 
-            <img class="products" src="../images/iphone.webp" alt="">
+            <img class="products" src="../images/I1.jpg" alt="">
             <div class="price">10% Off&#8377;90,999</div>
             <div>I phone pro</div>
         </div>
@@ -617,12 +657,12 @@
                  <div class="s-ad">AD</div>
             </div>
              <div class="s-card">
-                <img class="spot" src="../images/phone.webp" alt="">
-                <div class="from"><span class="rate">From &#8377;599</span> </div>
+                <img class="spot" src="../images/realme phone.webp" alt="">
+                <div class="from"><span class="rate">Up to 30%off &#8377;599</span> </div>
                  <div class="s-ad">AD</div>
             </div>
              <div class="s-card">
-                <img class="spot" src="../images/smarttt.webp" alt="">
+                <img class="spot" src="../images/smartwatch.webp" alt="">
                 <div class="from"><span class="rate">Up To 60%Off</span></div>
                  <div class="s-ad">AD</div>
             </div>
@@ -645,6 +685,8 @@
                </div>
                <div class="r2">
                   <div class="br">
+                     <img class="p" src="../images/p1.png" alt="">
+                     <img class="p2" src="../images/p2.png" alt="">
                      <div class="pink">
                         <div class="r2h">Celebrate local charm</div>
                         <div class="r2s">- Get faves from around your city -</div>
@@ -699,7 +741,10 @@
          </div>
       </section>
     <footer>
-        <div class="left-column">
+       
+
+        <div class="rl">
+          <div class="left-column">
             <div>
                 <span>ABOUT</span>
                  <span>Contact Us</span>
@@ -760,6 +805,38 @@
                 <span>© 2007-2026 Flipkart.com</span>
             </div>
 
+        </div>
+        </div>
+
+        <div class="bottom">
+         <div>
+            <span class="bi bi-shop l"></span>
+            <span>Become a Seller</span>
+         </div>
+          <div>
+            <span class="bi bi-magic l"></span>
+            <span>Advetise</span>
+         </div>
+          <div>
+            <span class="bi bi-gift  l"></span>
+            <span>Gift Cards</span>
+         </div>
+          <div>
+            <span class="bi bi-question-circle l"></span>
+            <span>Help Center</span>
+         </div>
+         <div>©2007-20026 Flipkart.com</div>
+         <div class="plogo">
+            <span><img src="../images/flipkart_payment_logos_only/05-visa.svg" alt=""></span>
+            <span><img src="../images/flipkart_payment_logos_only/06-mastercard.svg" alt=""></span>
+            <span><img src="../images/flipkart_payment_logos_only/07-maestro.svg" alt=""></span>
+            <span><img src="../images/flipkart_payment_logos_only/08-american-express.svg" alt=""></span>
+            <span><img src="../images/flipkart_payment_logos_only/09-diners-club.svg" alt=""></span>
+            <span><img src="../images/flipkart_payment_logos_only/11-rupay.svg" alt=""></span>
+            <span><img src="../images/flipkart_payment_logos_only/12-net-banking.svg" alt=""></span>
+            <span><img src="../images/flipkart_payment_logos_only/13-cash-on-delivery.svg" alt=""></span>
+            <span><img src="../images/flipkart_payment_logos_only/14-easy-emi.svg" alt=""></span>
+         </div>
         </div>
     </footer>
 </body>

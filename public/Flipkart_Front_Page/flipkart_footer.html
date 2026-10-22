@@ -14,19 +14,21 @@
         .left-column{
            display: grid;
            grid-template-columns: 3fr 3fr 3fr 3fr; 
+           padding: 30px;
         }
         .right-column{
             border-left: 1px solid;
             display: grid;
             grid-template-columns: 6fr 6fr;
             grid-gap: 70px;
+             padding: 30px;
+
         }
         footer{
             margin-top: 50px;
-           
             background-color: rgb(29, 28, 42);
             color: white;
-            padding: 50px;
+           
             
         }
         .left-column span{
@@ -34,10 +36,11 @@
             margin-right: 10px;
             margin-bottom: 3px;
             font-size: 13px;
+
         }
-        .right-column{
-            padding-left: 30px;
-        }
+      .left-column span:hover{
+         text-decoration: underline;
+      }
         .right-column span{
             
             display: block;
@@ -403,24 +406,29 @@
       font-family: Arial;
    }
    .r2{
-      background-color: rgb(243, 184, 36);
-      width: 800px;
+     background-color: rgb(243, 184, 36);
+     width: 100%;
      display: flex;
      justify-content: center;
      align-items: center;
      border-radius: 7px;
-     padding: 13px;
+     padding: 23px;
      margin-top: 20px;
      margin-bottom: 20px;
+     height: 320px;
+   }
+   .big1{
+      padding-left: 110px;
+      padding-right: 110px;
    }
    .r2h{
-      font-size: 60px;
+      font-size: 100px;
       font-family: 'Times New Roman', Times, serif;
       font-weight: bold;
       color: white;
    }
    .r2s{
-      font-size: 30px;
+      font-size: 50px;
       color: white;
       font-family: Arial;
    }
@@ -430,14 +438,14 @@
       background-color: palevioletred;
       padding: 3px;
       position: relative;
+      width: 100%;
    }
    .pink{
       background-color: rgb(223, 73, 123);
       border-radius: 10px;
       padding: 20px;
-      width: 720px;
-      height: 170px;
-      border: 2px dashed goldenrod;
+      height: 250px;
+      border: 2px dashed rgb(236, 182, 46);
      display: flex;
      flex-direction: column;
      justify-content: center;
@@ -479,12 +487,13 @@
    .bottom{
     width:100%;
      display: flex;
-     border-top: 1px solid gray;
-     padding-top: 35px;
-     font-size: 14px;
+     border-top: 1px solid rgb(110, 110, 110);
+     font-size: 13px;
+     padding: 30px;
+     justify-content: space-around;
    }
    .bottom div {
-      margin-right: 60px;
+      margin-right: 10px;
    }
    .rl{
       display: flex;
@@ -493,13 +502,16 @@
    .bottom .l{
       color: yellow;
    }
-
+  .tag{
+   width: 25px;
+  }
     </style>
 </head>
 <body>
     <header>
         <div class="row-1">
             <div class="sec-1"><img class="logo" src="../images/Flipkart_Logo_as_of_2025.png" alt="">
+               <span><img class="tag" src="../images/tags_206979.png" alt=""> Value 365</span>
                 <span> <img class="scooter" src="../images/scooter_3157651.ico" alt=""> Minutes</span>
                 <span><img class="air" src="../images/aircraft_10822782.ico" alt=""> Travel</span>
             </div>

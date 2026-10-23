@@ -101,23 +101,8 @@
             font-size: 17px;
             padding-left: 3px;
         }
-       section {
-        display: grid;
-        grid-template-columns:  3fr 3fr 3fr 3fr ;
-       }
-       section div{
-        border: 1px solid gray;
-        margin: 20px;
-        height: 250px;
-        padding: 20px;
-        display: flex;
-       align-items: center;
-       box-shadow: 4px 4px 3px gray;
-       border-radius: 6px;
-       font-weight: bold;
-       font-size: 30px;
-       text-align: center;
-    }
+       
+    
     footer{
         font-family: Arial;
     }
@@ -225,11 +210,19 @@
       .row-2 span:first-child{
         font-size: 20px;
       }
-     
       .frow-1 span:not(:first-child){
         color: gray;
       }
-        
+         .img{
+            width: 260px;
+            height: 400px;
+            border-radius:10px;
+            margin-right: 10px;
+        }
+        .for{
+            padding: 10px;
+            display: flex;
+        }
     </style>
 </head>
 <body>
@@ -240,8 +233,6 @@
                 <img class="logo" src="../images/ChatGPT Image Sep 30, 2026, 11_49_36 AM.png" alt="">
                 <span class="bi bi-geo-alt"> <i>Update Location</i> </span>
             </div>
-       
-
          <div class="search-bar">
             <span><span class="all">All <span class="bi bi-caret-down-fill"></span></span> <span class="placeholder"> Search Amaozon.in</span> </span>
            
@@ -277,15 +268,13 @@
         <span>Grocery & Gourmet Foods</span>
      </nav>
     </header>
-    <section>
-        <div>50% <br> off on Men's Clothing</div>
-        <div>50% <br> off on Men's Clothing</div>
-        <div>50% <br> off on Men's Clothing</div>
-        <div>50% <br> off on Men's Clothing</div>
-        <div>50% <br> off on Men's Clothing</div>
-        <div>50% <br> off on Men's Clothing</div>
-        <div>50% <br> off on Men's Clothing</div>
-        <div>50% <br> off on Men's Clothing</div>
+    <section class="for">
+        <div><img class="img" src="../images/kitchen.avif" alt=""></div>
+        <div><img class="img" src="../images/beauty.avif" alt=""></div>
+        <div><img class="img" src="../images/clothes.avif" alt=""></div>
+        <div><img class="img" src="../images/toys.avif" alt=""></div>
+        <div><img class="img" src="../images/Pc.avif" alt=""></div>
+  
     </section>
     <footer>
         <div class="footer">

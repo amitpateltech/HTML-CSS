@@ -14,11 +14,12 @@
             background-color: #131921;
             display: flex;
             flex-direction: row;
-            padding: 15px;
+            padding: 12px;
             color: white;
             justify-content: space-between;
             align-items: center;
             text-align: center;
+            font-family: Arial;
         }
         .logo {
             width: 110px;
@@ -94,7 +95,8 @@
             color: white;
             display: flex;
             justify-content: space-between;
-            padding: 3px;
+            padding: 12px;
+            font-family: Arial;
         }
         .cart{
             width: 20px;
@@ -215,13 +217,25 @@
       }
          .img{
             width: 260px;
-            height: 400px;
+            height: 420px;
             border-radius:10px;
             margin-right: 10px;
         }
         .for{
             padding: 10px;
             display: flex;
+            font-family: Arial;
+        }
+        .s1{
+            position: relative;
+              width: 270px;
+              margin-right: 15px;
+        }
+        .s1 h1{
+            position: absolute;
+            top: -10px;
+            left: 1px;
+            padding: 10px;
         }
     </style>
 </head>
@@ -269,11 +283,26 @@
      </nav>
     </header>
     <section class="for">
-        <div><img class="img" src="../images/kitchen.avif" alt=""></div>
-        <div><img class="img" src="../images/beauty.avif" alt=""></div>
-        <div><img class="img" src="../images/clothes.avif" alt=""></div>
-        <div><img class="img" src="../images/toys.avif" alt=""></div>
-        <div><img class="img" src="../images/Pc.avif" alt=""></div>
+        <div class="s1">
+             <img class="img" src="../images/kitchen.avif" alt="">
+             <h1>Shop kitchen must-haves</h1>
+            </div>
+        <div class="s1">
+            <img class="img" src="../images/beauty.avif" alt="">
+             <h1>Shop all things beauty</h1>
+        </div>
+        <div class="s1">
+            <img class="img" src="../images/clothes.avif" alt="">
+             <h1>Start looking sharp</h1>
+        </div>
+        <div class="s1">
+            <img class="img" src="../images/toys.avif" alt="">
+             <h1>Toys for little ones</h1>
+        </div>
+        <div class="s1">
+            <img class="img" src="../images/Pc.avif" alt="">
+             <h1>Level up your PC here</h1>
+        </div>
   
     </section>
     <footer>

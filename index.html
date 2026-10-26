@@ -1,28 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
- legend{
-  
-  border: 1px solid;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      legend {
+        border: 1px solid;
+      }
+      span h1 {
+        display: flex;
+        flex-direction: row;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <input
+        type="text"
+        name="h"
+        placeholder="Enter your name"
+        autofocus
+        maxlength="9"
+        minlength="3"
+        required
+      />
 
- }
- span h1{
-  display: flex;
-  flex-direction: row;
- }
-  </style>
-  
-</head>
-<body>
-  <fieldset>
-    <legend>Titles</legend>
-    <span><h1>hello</h1></span>
-    <span><h1>hello</h1></span>
-    <span><h1>hello</h1></span>
-  </fieldset>
-</body>
+      
+        <input type="text" name="search" list="pro">
+
+        <datalist id="pro">
+          <option>Apple</option>
+          <option>Samsung</option>
+          <option>Redami</option>
+        </datalist> 
+
+          <input type="text" name="search"  list="products">
+
+           <datalist  id="products">
+
+              <option> Mobile </option>
+               <option> TV </option>
+           </datalist>
+
+
+      <input type="text" value="2" readonly name="qnt" />
+      <button>Submit</button>
+    </form>
+  </body>
 </html>

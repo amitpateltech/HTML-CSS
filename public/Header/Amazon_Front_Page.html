@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="shortcut icon" href="../images/amazon.ico">
+    <link rel="icon" href="../images/amazon.ico">
     <title>Amazon</title>
     <style>
        body{
         margin: 0px;
+        box-sizing: border-box;
        }
         .upper-header{
             background-color: #131921;
@@ -97,6 +98,7 @@
             justify-content: space-between;
             padding: 12px;
             font-family: Arial;
+            align-items: center;
         }
         .cart{
             width: 20px;
@@ -237,6 +239,62 @@
             left: 1px;
             padding: 10px;
         }
+        .items{
+            border: 1px solid rgb(196, 193, 193);
+            padding: 15px;
+            margin-left: 12px;
+            border-radius: 15px;
+            width: 310px;
+            display: grid;
+          font-family: Arial;
+          text-align: center;
+        }
+        .items img{
+            width: 140px;
+            border-radius: 15px;
+        }
+        .s2{
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+        }
+        .h1{
+            font-size: 21px;
+            font-weight:900;
+            display: flex;
+            justify-content: space-between;
+            align-items:first baseline;
+            text-align: start;
+            margin-bottom: 5px;
+            color: black;
+            font-family:Arial, serif;
+        }
+        .s2 div div{
+            text-align:start;
+            margin-left: 10px;
+        }
+        .game{
+            margin-top: 35px;
+        }
+        .cate{
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .bi-chevron-right{
+            display: flex;
+            justify-content: end;
+            align-items:end;
+        }
+        .bi-list{
+           font-weight: bold;
+           font-size: 25px;
+           display: flex;
+           align-items: center;
+        
+        }
+        .a{
+            padding-left: 2px;
+            font-size: 15px;
+        }
     </style>
 </head>
 <body>
@@ -265,7 +323,8 @@
      </div>
 
      <nav class="lower-header">
-        <span class="bi bi-list">All</span>
+        <span class="bi bi-list"> <span class="a">All</span></span>
+       
         <span>Amaozon Pay</span>
         <span>Mobiles</span>
         <span>Today's Deals</span>
@@ -303,8 +362,204 @@
             <img class="img" src="../images/Pc.avif" alt="">
              <h1>Level up your PC here</h1>
         </div>
-  
+      
     </section>
+     <section class="cate">
+      <div class="items">
+          <div class="h1">
+            <span>Plug in with our electronics</span>
+            <span class="bi bi-chevron-right"></span>
+        </div>
+       <div class="s2">
+         <div>
+            <img src="../images/headphone.jpg" alt="">
+            <div>Headphones</div>
+        </div>
+          <div>
+            <img src="../images/tablet.jpg" alt="">
+            <div>Tablets</div>
+        </div>
+          <div>
+            <img class="game" src="../images/gaming.jpg" alt="">
+            <div>Gaming</div>
+        </div>
+          <div>
+            <img  class="game" src="../images/speakeramazon.jpg" alt="">
+            <div>Speakers</div>
+        </div>
+       </div>
+      </div>
+      <div class="items">
+          <div class="h1">
+            <span>Score the top PC & Accessories</span>
+            <span class="bi bi-chevron-right "></span>
+        </div>
+       <div class="s2">
+         <div>
+            <img src="../images/dekstop.jpg" alt="">
+            <div>Dekstop</div>
+        </div>
+          <div>
+            <img src="../images/laptop.jpg" alt="">
+            <div>Laptops</div>
+        </div>
+          <div>
+            <img class="game" src="../images/hard drive.jpg" alt="">
+            <div>Hard Drives</div>
+        </div>
+          <div>
+            <img  class="game" src="../images/Accessories.jpg" alt="">
+            <div>PC Accessories</div>
+        </div>
+       </div>
+      </div>
+      <div class="items">
+          <div class="h1">
+            <span>Gear up to get fit</span>
+            <span class="bi bi-chevron-right"></span>
+        </div>
+       <div class="s2">
+         <div>
+            <img src="../images/clothing.jpg" alt="">
+            <div>Clothings</div>
+        </div>
+          <div>
+            <img src="../images/Tracker.jpg" alt="">
+            <div>Trackers</div>
+        </div>
+          <div>
+            <img class="game" src="../images/Equipment.jpg" alt="">
+            <div>Equipments</div>
+        </div>
+          <div>
+            <img  class="game" src="../images/deals.jpg" alt="">
+            <div>Deals</div>
+        </div>
+       </div>
+      </div>
+      <div class="items">
+          <div class="h1">
+            <span>Apparel under $25</span>
+            <span class="bi bi-chevron-right"></span>
+        </div>
+       <div class="s2">
+         <div>
+            <img src="../images/women.jpg" alt="">
+            <div>Women</div>
+        </div>
+          <div>
+            <img src="../images/men.jpg" alt="">
+            <div>Men</div>
+        </div>
+          <div>
+            <img class="game" src="../images/girls.jpg" alt="">
+            <div>Girls</div>
+        </div>
+          <div>
+            <img  class="game" src="../images/boys.jpg" alt="">
+            <div>Boys</div>
+        </div>
+       </div>
+      </div>
+       </section>
+       <section class="cate">
+         <div class="items">
+          <div class="h1">
+            <span>Fantastic Finds for Home</span>
+            <span class="bi bi-chevron-right"></span>
+        </div>
+       <div class="s2">
+         <div>
+            <img src="../images/kitchena.jpg" alt="">
+            <div>Kitchen</div>
+        </div>
+          <div>
+            <img src="../images/homedecor.jpg" alt="">
+            <div>Home Decor</div>
+        </div>
+          <div>
+            <img class="game" src="../images/dinning.jpg" alt="">
+            <div>Dinning</div>
+        </div>
+          <div>
+            <img  class="game" src="../images/smarthome.jpg" alt="">
+            <div>Smart Home</div>
+        </div>
+       </div>
+      </div>
+      <div class="items">
+          <div class="h1">
+            <span>Shine brighter with your fashion faves</span>
+            <span class="bi bi-chevron-right "></span>
+        </div>
+       <div class="s2">
+         <div>
+            <img src="../images/jwellary.jpg" alt="">
+            <div>Jewelry</div>
+        </div>
+          <div>
+            <img src="../images/handbags.jpg" alt="">
+            <div>Handbags</div>
+        </div>
+          <div>
+            <img class="game" src="../images/footwear.jpg" alt="">
+            <div>Footwear</div>
+        </div>
+          <div>
+            <img  class="game" src="../images/beutyaa.jpg" alt="">
+            <div>Beauty</div>
+        </div>
+       </div>
+      </div>
+      <div class="items">
+          <div class="h1">
+            <span>Unveil your radiance</span>
+            <span class="bi bi-chevron-right"></span>
+        </div>
+       <div class="s2">
+         <div>
+            <img src="../images/haircare.jpg" alt="">
+            <div>Hair Care</div>
+        </div>
+          <div>
+            <img src="../images/fragrance.jpg" alt="">
+            <div>Fragrances</div>
+        </div>
+          <div>
+            <img class="game" src="../images/makeup.jpg" alt="">
+            <div>Make-up</div>
+        </div>
+          <div>
+            <img  class="game" src="../images/skincare.jpg" alt="">
+            <div>Skin Care</div>
+        </div>
+       </div>
+      </div>
+      <div class="items">
+          <div class="h1">
+            <span>Level up your PC here</span>
+            <span class="bi bi-chevron-right"></span>
+        </div>
+       <div class="s2">
+         <div>
+            <img src="../images/laptopss.jpg" alt="">
+            <div>Laptops</div>
+        </div>
+          <div>
+            <img src="../images/Pcs.jpg" alt="">
+            <div>PCs</div>
+        </div>
+          <div>
+            <img class="game" src="../images/harddrives.jpg" alt="">
+            <div>Hard Drives</div>
+        </div>
+          <div>
+            <img  class="game" src="../images/Monitors.jpg" alt="">
+            <div>Monitors</div>
+        </div>
+       </div>
+      </div>
+       </section>
     <footer>
         <div class="footer">
             <div class="row-1"> Back To Top</div>

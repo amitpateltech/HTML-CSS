@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body{
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        
+        }
+        form{
+            width: 510px;
+            font-family: Arial;
+            padding: 20px;
+        }
+        .logo{
+        width: 60px;
+        color: black;
+        }
+        .mtitle{
+            font-size: 23px;
+            margin-top: 10px;
+            margin-bottom: 8px;
+        }
+        .stitle{
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .imail{
+            width: 100%;
+            padding: 19px;
+            border-radius: 15px;
+            border: 1px solid rgb(207, 205, 205);
+            margin-top: 6px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .label{
+            font-weight:bold;
+            font-size: 15px;
+        }
+        .blue{
+            color: blue;
+        }
+        .btn{
+            width: 100%;
+            padding: 15px;
+            margin: 10px;
+            background-color: blue;
+            border: none;
+            border-radius: 15px;
+            color: white;
+        }
+        .already{
+            text-align: center;
+        }
+        select{
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 160px;
+        }
+        .dob{
+            width: 107%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .mt{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        .hh{
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="">
+        <div><img class="logo" src="../images/blackmeta.png" alt=""></div>
+        <div class="mtitle">Get started on Instagram with a Meta account</div>
+        <div class="stitle">A Meta Account lets you access multiple Meta technologies, such as Instagram, easily and securely.</div>
+        <div class="mobile">
+            <label class="label" for="email">Mobile number or email address</label>
+        </div>
+        <input class="imail" type="text" id="email" placeholder="Mobile Number or Email Address">
+        <div class="stitle">You may receive notifications from us. <span class="blue">Learn why we ask for your contact information</span></div>
+
+        <div class="mobile">
+            <label class="label" for="password">Password</label>
+        </div>
+        <input  class="imail" type="text" id="password" placeholder="Mobile Number or Email Address">
+         <div class="mobile">
+            <label class="label" for="password" >Date of birth <span class="bi bi-question-circle"></span></label>
+        </div>
+        <div class="dob">
+          
+            <select name="" id="" >
+                <option class="tt" value="" selected disabled>Day</option>
+                <optgroup>
+                    <option >1</option>
+                    <option >2</option>
+                    <option >3</option>
+                    <option >4</option>
+                    <option >5</option>
+                    <option >6</option>
+                    <option >7</option>
+                    <option >8</option>
+                    <option >9</option>
+                    <option >10</option>
+                    <option >11</option>
+                    <option >12</option>
+                    <option >13</option>
+                    <option >14</option>
+                    <option >15</option>
+                    <option >16</option>
+                    <option >17</option>
+                    <option >18</option>
+                    <option >19</option>
+                    <option >20</option>
+                    <option >21</option>
+                    <option >22</option>
+                    <option >23</option>
+                    <option >24</option>
+                    <option >25</option>
+                    <option >26</option>
+                    <option >27</option>
+                    <option >28</option>
+                    <option >29</option>
+                    <option >30</option>
+                    <option >31</option>
+                </optgroup>
+            </select>
+            <select>
+                <option value="" selected disabled>Month</option>
+                <optgroup>
+                  <option value="January">January</option>
+                   <option value="February">February</option>
+                   <option value="March">March</option>
+                   <option value="April">April</option>
+                   <option value="May">May</option>
+                   <option value="June">June</option>
+                   <option value="July">July</option>
+                   <option value="August">August</option>
+                   <option value="September">September</option>
+                   <option value="October">October</option>
+                   <option value="November">November</option>
+                   <option value="December">December</option>
+                </optgroup>
+            </select>
+             <select name="" id="">
+                 <option value="" selected disabled>Year</option>
+                <optgroup>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                </optgroup>
+            </select>
+        </div>
+         <div class="mobile">
+            <label class="label" for="name">Name</label>
+        </div>
+        <input class="imail" type="text" id="name" placeholder="Full Name">
+         <div class="mobile">
+            <label class="label" for="email">Username</label>
+        </div>
+        <input class="imail" type="text" id="email" placeholder="Password">
+        <div class="hh">People who use our service may have uploaded your contact information to Instagram. <span class="blue">Learn more</span></div>
+        <div class="mt">By tapping Submit, you agree to create an account and to Instagram's <span class="blue">Terms,Privacy Policy</span>  and <span class="blue">Cookies Policy.</span></div>
+        <div class="hh"> The <span class="blue">Privacy Policy</span>  describes the ways we can use the information we collect when you create an account. For example, we use this information to provide, personalise and improve our products, including ads.</div>
+        <button class="btn">Submit</button>
+        <div class="already">I have already cccount</div>
+    </form>
+</body>
+</html>

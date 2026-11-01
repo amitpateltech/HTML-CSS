@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        img{
+            width: 400px;
+            height: 500px;
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            font-family: Arial;
+        }
+        .blue{
+            color: blue;
+            text-decoration: underline;
+        }
+      .name{
+     
+        display: flex;
+        flex-direction: row;
+       
+      }
+     .a{
+        width: 200px;
+         padding: 15px;
+         margin-right: 15px;
+         border-radius: 10px;
+         border: 1px solid gray;
+         margin-bottom: 15px;
+     }
+     input{
+        width: 90%;
+        padding: 15px;
+         margin-right: 15px;
+         border-radius: 10px;
+         border: 1px solid gray;
+         margin-bottom: 15px;
+     }
+     .mtitle{
+        font-size: 50px;
+     }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div><img src="../images/mountain.jpg" alt=""></div>
+        <div>
+            <div class="mtitle">Creat an account</div>
+            <div>Already have accound <span class="blue">Login</span></div>
+            <div class="name">
+                <input class="a" type="text" placeholder="First Name">
+                <input class="a" type="text" placeholder="Last Name">
+            </div>
+            <div>
+                <input type="email" placeholder="Email">
+            </div>
+            <div>
+                <input type="password" placeholder="Enter Your Password">
+            </div>
+            <div>
+                <span class="bi bi-check-fill"></span>
+                <span>I agree to the <span class="blue">Terms & Conditions</span></span>
+            </div>
+            <div>or registerd with</div>
+           <div class="link">
+             <div>
+                <span class="bi bi-google"></span>
+                <span>Goggle</span>
+            </div>
+            <div>
+                <span class="bi bi-github"></span>
+                <span>Git Hub</span>
+            </div>
+           </div>
+        </div>
+    </form>
+</body>
+</html>

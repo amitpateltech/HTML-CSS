@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-letter{
+            font-size: 25px;
+            
+        }
+        p::first-line{
+            font-weight: bold;
+        }
+        #hh:valid+span{
+            display: none;
+            
+        }
+        #hh:valid{
+            border: 2px solid green;
+        }
+        input:optional+span{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+   <form action="">
+     <input id="hh" type="text" name="firstname" required><span>*</span>
+     <input type="text" name="firstname" ><span>*</span>
+    <button>Submit</button>
+   </form>
+</body>
+</html>

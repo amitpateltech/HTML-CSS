@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Document</title>
+    <style>
+        header{
+            display: flex;
+            background-color: navy;
+            color: white;
+            padding: 25px;
+            flex-wrap: wrap;
+        }
+        header span{
+            margin-right: 20px;
+        }
+        .brand{
+            display: flex;
+            margin-right: 10px;
+        }
+        .men{
+            background-image: url(../images/men.jpg);
+            background-size: cover;
+            width: 400px;
+            height: 400px;
+            text-align: center;
+        }
+         .women{
+            background-image: url(../images/women.jpg);
+            background-size: cover;
+             width: 400px;
+            height: 400px;
+             text-align: center;
+        }
+         .kid{
+            background-image: url(../images/kids.jpg);
+            background-size: cover;
+             width: 400px;
+            height: 400px;
+            text-align: center;
+        }
+        section{
+            display: flex;
+            padding: 10px;
+            justify-content: space-evenly;
+        }
+        @media screen and (max-width:541px){
+            header{
+                padding: 15px;
+                display: flex;
+                flex-wrap: wrap;
+                border-radius: 5px;
+            }
+            section div{
+                margin-bottom: 10px;
+                margin-top: 10px;
+                border-radius: 10px;
+            }
+            section{
+                padding: 0px;
+                display: flex;
+                flex-direction: column;
+            }
+            .bi-fan{
+            margin-right: 5px;
+            font-size: 13px;
+            color: red;
+            display: flex;
+            align-items: center;
+        }
+        }
+        @media screen and (max-width: 768px) and (orientation: landscape) {
+               header{
+            display: flex;
+            background-color: navy;
+            color: white;
+            padding: 25px;
+            margin-bottom: 10px;
+        }
+        .bi-fan{
+            margin-right: 10px;
+        }
+         section{
+                padding: 0px;
+                display: flex;
+                flex-direction: row;
+            }
+            .men{
+            background-image: url(../images/men.jpg);
+            background-size: cover;
+            width:200px;
+            height: 200px;
+            
+        }
+      
+         .women{
+            background-image: url(../images/women.jpg);
+            background-size: cover;
+             width: 200px;
+            height: 200px;
+             text-align: center;
+        }
+         .kid{
+            background-image: url(../images/kids.jpg);
+            background-size: cover;
+             width: 200px;
+            height: 200px;
+             text-align:center;
+          
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <div class="brand">
+         <div class=" bi bi-fan"></div>
+        <div>Google</div>
+       </div>
+       <nav>
+        <span>Home</span>
+        <span>SingIn</span>
+        <span>About</span>
+        <span>Contact Us</span>
+       </nav>
+    </header>
+    <section>
+        <div class="men">Men's</div>
+        <div class="women">Women's</div>
+        <div class="kid">Kid's</div>
+    </section>
+</body>
+</html>

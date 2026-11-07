@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial;
+        margin: 0px;
+         padding-top: 80px;
+          box-sizing: border-box;
+      }
+      header {
+        background-color: white;
+        padding: 25px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 18px;
+        position: fixed;
+        z-index:  1000;
+          top: 0;
+         right: 0;
+         left: 0;
+          box-sizing: border-box;
+      }
+      .brand span {
+        margin-right: 10px;
+      }
+      .cap {
+        font-size: 25px;
+        color: black;
+        font-weight: bold;
+      }
+      .sh{
+        font-size: 25px;
+        color: rgb(91, 89, 89);
+      }
+      .bi-shop {
+        color: red;
+        font-size: 30px;
+      }
+      nav span {
+        margin-right: 20px;
+        font-weight: bold;
+      }
+      .ico span {
+        margin-left: 20px;
+      }
+      .first {
+        display: grid;
+        margin-top: 10px;
+        grid-template-columns: 4fr 4fr 4fr;
+      }
+      .card {
+        width: 30vw;
+        height: 60vh;
+        overflow: hidden;
+        position: relative;
+        margin-left: 20px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        transition-duration: 0.6s;
+      }
+      .card:hover img {
+        transform: scale(1.05);
+        transition-duration: 0.8s;
+      }
+      .card:hover .title {
+        transform: translateY(-20px);
+        transition-duration: 0.8s;
+      }
+      .title {
+        font-weight: bold;
+        font-size: large;
+        position: absolute;
+        bottom: 30px;
+        left: 80px;
+        transition-duration: 1s;
+        color: black;
+      }
+      .card:hover .shop {
+        display: block;
+        transform: translateY(-15px);
+        transition-duration: 0.5s;
+        visibility: visible;
+        opacity: 3;
+      }
+      .shop {
+        position: absolute;
+        bottom: 8px;
+        left: 130px;
+        font-size: 17px;
+        text-decoration: underline;
+        color: rgb(234, 11, 123);
+        visibility: hidden;
+        transition-duration: 0.7s;
+        opacity: 0.3;
+        font-weight: bolder;
+      }
+      .main {
+        width: 23vw;
+        height: 70vh;
+        position: relative;
+        margin-left: 17px;
+        overflow: hidden;
+      }
+      button {
+        position: absolute;
+        bottom: 130px;
+        right: 100px;
+        background-color: white;
+        color: black;
+       margin: 0px;
+       padding: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        visibility: hidden;
+        opacity: 0.7;
+        transition-duration:0.3s;
+        border: unset;
+      }
+      button span {
+       display: flex;
+        padding: 15px;
+        font-size: 17px;
+      }
+      .price {
+        margin-top: 10px;
+        text-align: center;
+        line-height: 25px;
+      }
+      .d{
+        text-decoration: line-through;
+        color: rgb(255, 128, 0);
+        padding-left: 13px;
+      }
+      .main:hover button{
+        visibility: visible;
+        opacity: 1;
+        transition-duration:1s;
+      }
+      .bi-cart:hover{
+        background-color:red;
+        padding: 15px;
+        color: white;
+      }
+      .bi-heart:hover{
+        background-color:red;
+        padding: 15px;
+        color: white;
+      }
+      .bi-search:hover{
+        background-color:red;
+        padding: 15px;
+        color: white;
+      }
+      .second{
+        display: flex;
+      }
+      .main:hover img{
+        transform: scale(1.06);
+      }
+      .stitle{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 50px;
+        align-items: center;
+      }
+      .sec span{
+        margin-left: 20px;
+        font-weight: bold;
+      }
+      .tit{
+        font-size: 40px;
+      }
+      article{
+        margin-right: 20px;
+        margin-left:20px;
+      }
+      .week:hover{
+        color: rgb(211, 10, 10);
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="brand">
+        <span class="bi bi-shop"><span class="cap">Capital</span></span>
+        <span class="sh">Shop</span>
+      </div>
+      <nav>
+        <span>Home</span>
+        <span>Men</span>
+        <span>Women</span>
+        <span>Baby Collection</span>
+        <span>Pages</span>
+        <span>Blog</span>
+        <span>Contact</span>
+      </nav>
+      <div class="ico">
+        <span class="bi bi-search"></span>
+        <span class="bi bi-person-circle"></span>
+        <span class="bi bi-cart"></span>
+      </div>
+    </header>
+    <article>
+        <img src="../images/menbanner.png" alt="">
+    </article>
+    <section class="first">
+      <div class="card">
+        <img src="../images/men1.avif" alt="" />
+        <div class="title">Women's Fashion</div>
+        <div class="shop">Shop</div>
+      </div>
+      <div class="card">
+        <img src="../images/fashion1.avif" alt="" />
+        <div class="title">Women's Fashion</div>
+        <div class="shop">Shop</div>
+      </div>
+      <div class="card">
+        <img src="../images/baby1.avif" alt="" />
+        <div class="title">Women's Fashion</div>
+        <div class="shop">Shop</div>
+      </div>
+    </section>
+    <div class="stitle">
+        <div class="tit">Trending This Week</div>
+        <div class="sec">
+            <span class="week">Men</span>
+            <span class="week">Women</span>
+            <span class="week">Baby</span>
+            <span class="week">Fashion</span>
+        </div>
+    </div>
+    <section class="second">
+      <div class="main">
+        <div class="ig">
+          <img src="../images/f1w.avif" alt="" />
+          <button>
+            <span class="bi bi-cart"></span>
+            <span class="bi bi-search"></span>
+            <span class="bi bi-heart"></span>
+          </button>
+        </div>
+        <div class="price">
+          <div>Cashmere Tank + Bag</div>
+          <div><span>$98.00</span> <span class="d">$120.00</span></div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="ig">
+          <img src="../images/f2w.avif" alt="" />
+          <button>
+            <span class="bi bi-cart"></span>
+            <span class="bi bi-search"></span>
+            <span class="bi bi-heart"></span>
+          </button>
+        </div>
+        <div class="price">
+          <div>Cashmere Tank + Bag</div>
+          <div><span>$98.00</span> <span class="d">$120.00</span></div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="ig">
+          <img src="../images/f3w.avif" alt="" />
+          <button>
+            <span class="bi bi-cart"></span>
+            <span class="bi bi-search"></span>
+            <span class="bi bi-heart"></span>
+          </button>
+        </div>
+        <div class="price">
+          <div>Cashmere Tank + Bag</div>
+          <div><span>$98.00</span> <span class="d">$120.00</span></div>
+        </div>
+      </div>
+      <div class="main">
+        <div class="ig">
+          <img src="../images/f4w.avif" alt="" />
+          <button>
+            <span class="bi bi-cart"></span>
+            <span class="bi bi-search"></span>
+            <span class="bi bi-heart"></span>
+          </button>
+        </div>
+        <div class="price">
+          <div>Cashmere Tank + Bag</div>
+          <div><span>$98.00</span> <span class="d">$120.00</span></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

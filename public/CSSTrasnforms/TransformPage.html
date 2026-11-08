@@ -7,28 +7,28 @@
       rel="stylesheet"
       href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css"
     />
-    <title>Document</title>
+    <title>Shopper's Stop</title>
     <style>
       body {
         font-family: Arial;
         margin: 0px;
-         padding-top: 80px;
-          box-sizing: border-box;
+        padding-top: 80px;
+        box-sizing: border-box;
       }
       header {
         background-color: white;
-        padding: 25px;
+        padding: 30px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
         font-size: 18px;
         position: fixed;
-        z-index:  1000;
-          top: 0;
-         right: 0;
-         left: 0;
-          box-sizing: border-box;
+        z-index: 1000;
+        top: 0;
+        right: 0;
+        left: 0;
+        box-sizing: border-box;
       }
       .brand span {
         margin-right: 10px;
@@ -38,13 +38,17 @@
         color: black;
         font-weight: bold;
       }
-      .sh{
+      .sh {
         font-size: 25px;
         color: rgb(91, 89, 89);
       }
       .bi-shop {
-        color: red;
+        color: white;
         font-size: 30px;
+        background-color: red;
+        padding: 7px;
+        border-radius: 100px;
+
       }
       nav span {
         margin-right: 20px;
@@ -60,7 +64,7 @@
       }
       .card {
         width: 30vw;
-        height: 60vh;
+        height: 48vh;
         overflow: hidden;
         position: relative;
         margin-left: 20px;
@@ -82,8 +86,8 @@
         font-weight: bold;
         font-size: large;
         position: absolute;
-        bottom: 30px;
-        left: 80px;
+        bottom: 50px;
+        left: 120px;
         transition-duration: 1s;
         color: black;
       }
@@ -96,8 +100,8 @@
       }
       .shop {
         position: absolute;
-        bottom: 8px;
-        left: 130px;
+        bottom: 18px;
+        left: 170px;
         font-size: 17px;
         text-decoration: underline;
         color: rgb(234, 11, 123);
@@ -115,22 +119,22 @@
       }
       button {
         position: absolute;
-        bottom: 130px;
+        bottom: 220px;
         right: 100px;
         background-color: white;
         color: black;
-       margin: 0px;
-       padding: 0px;
+        margin: 0px;
+        padding: 0px;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         visibility: hidden;
         opacity: 0.7;
-        transition-duration:0.3s;
+        transition-duration: 0.3s;
         border: unset;
       }
       button span {
-       display: flex;
+        display: flex;
         padding: 15px;
         font-size: 17px;
       }
@@ -139,38 +143,38 @@
         text-align: center;
         line-height: 25px;
       }
-      .d{
+      .d {
         text-decoration: line-through;
         color: rgb(255, 128, 0);
         padding-left: 13px;
       }
-      .main:hover button{
+      .main:hover button {
         visibility: visible;
         opacity: 1;
-        transition-duration:1s;
+        transition-duration: 1s;
       }
-      .bi-cart:hover{
-        background-color:red;
+      .bi-cart:hover {
+        background-color: red;
         padding: 15px;
         color: white;
       }
-      .bi-heart:hover{
-        background-color:red;
+      .bi-heart:hover {
+        background-color: red;
         padding: 15px;
         color: white;
       }
-      .bi-search:hover{
-        background-color:red;
+      .bi-search:hover {
+        background-color: red;
         padding: 15px;
         color: white;
       }
-      .second{
+      .second {
         display: flex;
       }
-      .main:hover img{
+      .main:hover img {
         transform: scale(1.06);
       }
-      .stitle{
+      .stitle {
         display: flex;
         justify-content: space-between;
         margin-left: 20px;
@@ -178,27 +182,58 @@
         padding: 50px;
         align-items: center;
       }
-      .sec span{
+      .sec span {
         margin-left: 20px;
         font-weight: bold;
       }
-      .tit{
+      .tit {
         font-size: 40px;
       }
-      article{
+      article {
         margin-right: 20px;
-        margin-left:20px;
+        margin-left: 20px;
       }
-      .week:hover{
+      .week:hover {
         color: rgb(211, 10, 10);
         text-decoration: underline;
+      }
+      footer{
+        padding: 40px;
+        background-color: black;
+        color: white;
+      
+      }
+      .fdes{
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        font-size: 18px;
+      }
+      .fdes div span{
+        display: block;
+        line-height: 40px;
+      }
+      .fbrand{
+        font-size: 22px;
+      }
+      .h{
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .fmain{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border-top: 1px solid;
+        border-bottom: 1px solid;
+        display: grid;
+        grid-template-columns: 3fr 9fr;
       }
     </style>
   </head>
   <body>
     <header>
       <div class="brand">
-        <span class="bi bi-shop"><span class="cap">Capital</span></span>
+        <span class="bi bi-shop"></span>
+        <span class="cap">Capital</span>
         <span class="sh">Shop</span>
       </div>
       <nav>
@@ -217,7 +252,7 @@
       </div>
     </header>
     <article>
-        <img src="../images/menbanner.png" alt="">
+      <img src="../images/menbanner.png" alt="" />
     </article>
     <section class="first">
       <div class="card">
@@ -237,13 +272,13 @@
       </div>
     </section>
     <div class="stitle">
-        <div class="tit">Trending This Week</div>
-        <div class="sec">
-            <span class="week">Men</span>
-            <span class="week">Women</span>
-            <span class="week">Baby</span>
-            <span class="week">Fashion</span>
-        </div>
+      <div class="tit">Trending This Week</div>
+      <div class="sec">
+        <span class="week">Men</span>
+        <span class="week">Women</span>
+        <span class="week">Baby</span>
+        <span class="week">Fashion</span>
+      </div>
     </div>
     <section class="second">
       <div class="main">
@@ -303,5 +338,49 @@
         </div>
       </div>
     </section>
+    <footer>
+     <div class="fmain">
+         <div class="fbrand">
+        <span class="bi bi-shop"></span>
+        <span class="fttiel">Capital</span>
+        <span>Shop</span>
+      </div>
+      <div class="fdes">
+        <div>
+          <span class="h">Shop Men</span>
+          <span>Clothing Fashion</span>
+          <span>Winter</span>
+          <span>Summer</span>
+          <span>Formal</span>
+          <span>Casual</span>
+        </div>
+        <div>
+          <span class="h">Shop Women</span>
+          <span>Clothing Fashion</span>
+          <span>Winter</span>
+          <span>Summer</span>
+          <span>Formal</span>
+          <span>Casual</span>
+        </div>
+        <div>
+          <span class="h">Baby Collection</span>
+          <span>Clothing Fashion</span>
+          <span>Winter</span>
+          <span>Summer</span>
+          <span>Formal</span>
+          <span>Casual</span>
+        </div>
+        <div>
+          <span class="h">Quick Links</span>
+          <span>Track Your Order</span>
+          <span>Support</span>
+          <span>FAQ</span>
+          <span>Careers</span>
+          <span>About</span>
+          <span>Contact Us</span>
+        </div>
+      </div>
+     </div>
+    </footer>
   </body>
 </html>

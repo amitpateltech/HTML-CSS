@@ -12,8 +12,9 @@
       body {
         font-family: Arial;
         margin: 0px;
-        padding-top: 80px;
+        padding-top: 105px;
         box-sizing: border-box;
+        min-width: 900px;
       }
       header {
         background-color: white;
@@ -46,7 +47,7 @@
         color: white;
         font-size: 30px;
         background-color: red;
-        padding: 7px;
+        padding: 10px;
         border-radius: 100px;
 
       }
@@ -189,10 +190,7 @@
       .tit {
         font-size: 40px;
       }
-      article {
-        margin-right: 20px;
-        margin-left: 20px;
-      }
+     
       .week:hover {
         color: rgb(211, 10, 10);
         text-decoration: underline;
@@ -211,13 +209,14 @@
       .fdes div span{
         display: block;
         line-height: 40px;
+        color: gray;
       }
       .fbrand{
         font-size: 22px;
       }
-      .h{
+      #h{
+        color: white;
         font-weight: bold;
-        margin-bottom: 5px;
       }
       .fmain{
         padding-top: 50px;
@@ -227,6 +226,49 @@
         display: grid;
         grid-template-columns: 3fr 9fr;
       }
+      .notice{
+        background-color: black;
+        color: white;
+        padding: 14px;
+        text-align: center;
+      }
+      .now{
+        color: rgb(225, 150, 10);
+        border-bottom: 2px solid orange;
+      }
+      .mainf{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        padding-bottom: 40px;
+          }
+          .sub{
+            color: white;
+            width: 200px;
+            padding: 21px;
+            display: inline;
+            background-color: red;
+            border-radius: 2px;
+            margin-left: 8px;
+          }
+          input{
+            padding: 20px;
+            width: 300px;
+          }
+          .icon span{
+            margin-right:15px;
+            font-size: 23px;
+            color: rgb(176, 173, 173);
+          }
+          .fs{
+            font-size: 26px;
+            margin-bottom: 10px;
+          }
+          .copy{
+            text-align: center;
+            margin-top: 20px;font-size: 14px;
+          }
     </style>
   </head>
   <body>
@@ -251,6 +293,7 @@
         <span class="bi bi-cart"></span>
       </div>
     </header>
+    <div class="notice">Sale Up To 50% Biggest Discounts. Hurry! Limited Period Offer <span class="now">Shop Now</span></div>
     <article>
       <img src="../images/menbanner.png" alt="" />
     </article>
@@ -339,6 +382,21 @@
       </div>
     </section>
     <footer>
+       <div class="mainf">
+        <div>
+            <div class="fs">Subscribe Newsletter</div>
+            <div>Subscribe newsletter to get 5% on all products.</div>
+        </div>
+        <main>
+            <input type="text" placeholder="Enter you email">
+            <div class="sub">Subscribe</div>
+        </main>
+        <div class="icon">
+            <span class="bi bi-facebook"></span>
+            <span class="bi bi-instagram"></span>
+            <span class="bi bi-youtube"></span>
+        </div>
+       </div>
      <div class="fmain">
          <div class="fbrand">
         <span class="bi bi-shop"></span>
@@ -347,7 +405,7 @@
       </div>
       <div class="fdes">
         <div>
-          <span class="h">Shop Men</span>
+          <span id="h">Shop Men</span>
           <span>Clothing Fashion</span>
           <span>Winter</span>
           <span>Summer</span>
@@ -355,7 +413,7 @@
           <span>Casual</span>
         </div>
         <div>
-          <span class="h">Shop Women</span>
+          <span id="h">Shop Women</span>
           <span>Clothing Fashion</span>
           <span>Winter</span>
           <span>Summer</span>
@@ -363,7 +421,7 @@
           <span>Casual</span>
         </div>
         <div>
-          <span class="h">Baby Collection</span>
+          <span id="h">Baby Collection</span>
           <span>Clothing Fashion</span>
           <span>Winter</span>
           <span>Summer</span>
@@ -371,7 +429,7 @@
           <span>Casual</span>
         </div>
         <div>
-          <span class="h">Quick Links</span>
+          <span id="h">Quick Links</span>
           <span>Track Your Order</span>
           <span>Support</span>
           <span>FAQ</span>
@@ -381,6 +439,7 @@
         </div>
       </div>
      </div>
+     <div class="copy">Copyright ©2026 All rights reserved </div>
     </footer>
   </body>
 </html>

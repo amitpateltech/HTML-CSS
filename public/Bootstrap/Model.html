@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <title>Document</title>
 </head>
-<body>
-    
+<body class="p-4">
+   <button class="btn btn-danger " data-bs-toggle="modal" data-bs-target="#talk">Talk to adviser</button> 
+   <div class="modal fade" id="talk">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Talk to Advisor</h2>
+                    <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <dl>
+                        <dt>First Name</dt>
+                        <dd><input type="text" class="form-control"></dd>
+                        <dt>Email</dt>
+                        <dd><input type="email" class="form-control"></dd>
+
+                        <dt>Mobile Number </dt>
+                        <dd><input type="text" class="form-control"></dd>
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button data-bs-dismiss="modal" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+   </div>
 </body>
 </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <title>Document</title>
+</head>
+<body class="p-4 ">
+    <header class="bg-warning p-3 d-flex justify-content-between">
+        <button class="bi bi-justify border" data-bs-toggle="offcanvas" data-bs-target="#menu"></button>
+        <button class="bi bi-cart border " data-bs-toggle="offcanvas"></button>
+    </header>
+    <div class="offcanvas offcanvas-start " id="menu">
+        <div class="offcanvas-header">
+            <h3>Online Shopping</h3>
+            <button class="btn btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="list-group">
+                <li class="list-group-item bg-primary"><span class="bi bi-house-door me-1"></span>Home</li>
+                <li class="list-group-item bg-warning"><span class="bi bi-gift me-1"></span>Offer</li>
+                <li class="list-group-item bg-danger"><span class="bi bi-heart me-1"></span>Wishlist</li>
+                <li class="list-group-item bg-success"><span class="bi bi-gear me-1"></span>Setting</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

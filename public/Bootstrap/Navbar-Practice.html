@@ -86,11 +86,23 @@
         </nav>
     </header>
       
-    <div class="carousel slide ">
+    <div class="carousel slide" id="slide" data-bs-ride="slide" data-bs-theme="dark">
         <div class="carousel-inner">
-            <div class="carousel-item">
-                <img src="../images/boo" alt="">
+            <div class="carousel-item active" data-bs-interval="2000ms">
+                <img src="../images/bb1.jpg" alt="" class="w-100" style="height: 500px;">
             </div>
+            <div class="carousel-item" data-bs-interval="100ms">
+                <img src="../images/bb2.jpg" alt="" class="w-100" style="height: 500px;">
+            </div>
+            <div class="carousel-item" data-bs-interval="100ms">
+                <img src="../images/bb3.jpg" alt="" class="w-100" style="height: 500px;">
+            </div>
+            <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#slide">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+             <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#slide">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
         </div>
     </div>
 
